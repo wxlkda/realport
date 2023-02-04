@@ -1,70 +1,153 @@
 # Portfolio Guide!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi! I am currently working on my portfolio as of right now. If you managed to see this, nice :D. Below are some links and colors I used on my site:
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Colors
+|Color|Color Code|
+|--|--|
+|`Background`|`#0A192F2`|
+|`Text Highlight Color`|`#112B52`|
+|`Text Highlight Color`|`#112b52`|
+|`Special Text/Icon Colors`|`#61dafb`|
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Future Projects
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Below is a list of projects that I have completed or I plan to work on in the future to further enhance my knowledge:
 
-### `npm test`
+ - [ ] Finish this site
+ - [ ] Add some small projects (1 or 2)
+ - [ ] Focus on DSA and Leetcode Grinding
+ - [x] Daily Leetcode (start off easy, go medium as I get better, then harder)
+- [ ]  Add more projects that focuses on System Design, AWS/Google Cloud, and ML
+## Switch to another file
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
 
-### `npm run build`
+## Rename a file
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Delete a file
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
 
-### `npm run eject`
+## Export a file
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Synchronization
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
 
-## Learn More
+There are two types of synchronization and they can complement each other:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
+	> To start syncing your workspace, just sign in with Google in the menu.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
+	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
 
-### Code Splitting
+## Open a file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
 
-### Analyzing the Bundle Size
+## Save a file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
 
-### Making a Progressive Web App
+## Synchronize a file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
 
-### Advanced Configuration
+If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
 
-### Deployment
+## Manage file synchronization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Publication
+
+Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
+
+> Before starting to publish, you must link an account in the **Publish** sub-menu.
+
+## Publish a File
+
+You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
+
+- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
+- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
+
+## Update a publication
+
+After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
+
+> **Note:** The **Publish now** button is disabled if your file has not been published yet.
+
+## Manage file publication
+
+Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
+
+
+# Markdown extensions
+
+StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+
+> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+
+
+## SmartyPants
+
+SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+
+|                |ASCII                          |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
+|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
+|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+
+
+## KaTeX
+
+You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
+
+The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
+
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
+> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+
+
+## UML diagrams
+
+You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+
+```mermaid
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+```
+
+And this will produce a flow chart:
+
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
