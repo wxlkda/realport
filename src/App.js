@@ -75,7 +75,7 @@ function About() {
         about me
       </span>
       <div className="about-info body-text">
-        I FINALLY PUSHED SEND HELP Some inpsiring text about me and the university I go to. Some of the frameworks I have worked with include:
+        Some inpsiring text about me and the university I go to. Some of the frameworks I have worked with include:
         <ul className="body-text">
           <li>Python</li>
           <li>Not Python</li>
