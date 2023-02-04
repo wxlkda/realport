@@ -1,0 +1,59 @@
+/*MUI: https://mui.com/material-ui/material-icons/*/
+:root {
+  --cloudy-white: #ccd6f6; /*about me text, need darker text for main stuff*/
+  --dark-gray: #8892b0; /*main stuff text*/
+  --light-blue: #61dafb; /*highlights/specialtext/icons*/
+  --background: #0a192f; /*background*/
+  --highlight-color: #112b52; /*self-explanatory*/
+}
+
+.App {
+  display: grid;
+  
+}
+
+
+@font-face {
+  font-family: 'NTR Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NTR Regular'), url('./Font/NTR-Regular.ttf') format('truetype');
+}
+
+.special {
+  font-family: "NTR Regular";
+  color: var(--light-blue);
+}
+
+
+.sentence {
+  font-size: 85px;
+  color: var(--cloudy-white);
+  font-family: "NTR Regular";
+}
+
+.title {
+  font-size: 60px;
+  color: var(--cloudy-white);
+  font-family: "NTR Regular";
+}
+
+.sub-text {
+  font-family: "NTR Regular";
+  color: var(--dark-gray);
+  font-size: 45px;
+}
+
+.body-text {
+  font-family: "NTR Regular";
+  color: var(--dark-gray);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+
+::selection {
+  background: var(--highlight-color);
+}
