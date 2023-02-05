@@ -1,1 +1,3 @@
-a
+.fullName {
+    color: var(--dark-gray);
+}
