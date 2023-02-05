@@ -2,7 +2,9 @@ import './App.css';
 import './css/Intro.css'
 import './css/About.css'
 import './css/Navigation.css'
-import React, { useState } from "react";
+import socials from "./css/socials.css"
+import React, { Component } from "react";
+import { Platform, StyleSheet, Text, View, TextInput } from "react";
 //import Sidebar from "./otherjs/Sidebar"
 //import HomeIcon from '@mui/icons-material/Home';
 //TODO: Add anchor links after the thing is odne. In order to do this, we gotta add IDS
@@ -86,6 +88,21 @@ function About() {
   );
 };
 
+function Socials() {
+  return (
+    <div id="socials">
+      <span className="title">
+        socials
+      </span>
+      <TextInput>
+        style={socials.fullName}
+        placeholder="Full Name"
+        
+      </TextInput>
+    </div>
+  );
+};
+
 function Navigation() {
 
   function changeColor(e) {
@@ -124,6 +141,7 @@ export default function App() {
       <div id="content">
         <Intro></Intro>
         <About></About>
+        
       </div>
       
     </div>
