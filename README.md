@@ -1,5 +1,4 @@
 # Portfolio Guide!
----
 Hi! I am currently working on my portfolio as of right now. If you managed to see this, nice :D. Below are some links and colors I used on my site:
 
 
@@ -15,7 +14,6 @@ Hi! I am currently working on my portfolio as of right now. If you managed to se
 Insert Assets Here
 
 ## Future Plans
----
 Below is a list of projects that I have completed or I plan to work on in the future to further enhance my knowledge:
 
  - [ ] Finish this site
