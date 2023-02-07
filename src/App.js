@@ -79,7 +79,7 @@ function About() {
       </span>
       <div className="about-info body-text">
         I am currently a <b>Computer Science</b> student studying at the <span className="special"><b> Toronto Metropolitan University</b></span> (formerly known as <span className="special">Ryerson</span>).
-        Outside of school, I like to enjoy board games such as <b>chess</b> and play online video games with my friends.
+        Outside of school, I enjoy board games such as <b>chess</b> and <b>catan</b>. Frequently, I also   play online video games with my friends.
         <br></br>
         <br></br>
         Below are some of the technologies that I am familiar with:
