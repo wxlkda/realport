@@ -71,9 +71,10 @@
 }
 
 .footer {
-  position: absolute;
   top: 94%;
   left: 45%;
+  margin-top: 90px;
+  margin-bottom: 10px;
 }
 
 
