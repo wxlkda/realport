@@ -17,8 +17,8 @@ Below are some links and colors I used on my site:
 |--|--|
 |`Background`|`#0A192F2`|
 |`Text Highlight Color`|`#112B52`|
-|`Text Highlight Color`|`#112b52`|
-|`Special Text/Icon Colors`|`#61dafb`|
+|`Text Color`|`#8892B0`|
+|`Special Text/Icon Colors`|`#61DAFB`|
 
 
   
