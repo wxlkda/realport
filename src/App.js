@@ -2,9 +2,6 @@ import './App.css';
 import './css/Intro.css'
 import './css/About.css'
 import './css/Navigation.css'
-import socials from "./css/socials.css"
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View, TextInput } from "react";
 //import Sidebar from "./otherjs/Sidebar"
 //import HomeIcon from '@mui/icons-material/Home';
 //TODO: Add anchor links after the thing is odne. In order to do this, we gotta add IDS
@@ -66,6 +63,10 @@ function Intro() {
         <span className="intro-inspirational body-text">
         Some inspiring text here that will inspire here single person that reads this message. Some inspiring text here that will inspire here single person that reads this message.   
         </span>
+        <br></br>
+        <div className="messageBox special">
+          <b>Say Hi!</b>
+        </div>
       </div>
   );
 };
@@ -74,15 +75,14 @@ function About() {
   return (
     <div id="about">
       <span className="title">
-        about me
+      /about-me
       </span>
       <div className="about-info body-text">
-        Some inpsiring text about me and the university I go to. Some of the frameworks I have worked with include:
-        <ul className="body-text">
-          <li>Python</li>
-          <li>Not Python</li>
-          <li>Java</li>
-        </ul>
+        I am currently a <b>Computer Science</b> student studying at the <span className="special"><b> Toronto Metropolitan University</b></span> (formerly known as <span className="special">Ryerson</span>).
+        Outside of school, I like to enjoy board games such as <b>chess</b> and play online video games with my friends.
+        <br></br>
+        <br></br>
+        Below are some of the technologies that I am familiar with:
       </div>
     </div>
   );
@@ -94,11 +94,6 @@ function Socials() {
       <span className="title">
         socials
       </span>
-      <TextInput>
-        style={socials.fullName}
-        placeholder="Full Name"
-        
-      </TextInput>
     </div>
   );
 };
@@ -141,8 +136,17 @@ export default function App() {
       <div id="content">
         <Intro></Intro>
         <About></About>
-        
+        <div className="footer">
+        <center className="footer-text">
+          Made and designed by Alwalid Khan.
+        </center>
+        <br></br>
+        <center className="footer-text">
+          All rights reserved ©.
+        </center>
       </div>
+      </div>
+      
       
     </div>
   );

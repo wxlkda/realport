@@ -12,7 +12,18 @@
   
 }
 
-
+.messageBox {
+  border-radius: 5px;
+  width: 130px;
+  height: 60px;
+  border: 1px solid var(--light-blue);
+  font-size: 20px;;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
 @font-face {
   font-family: 'NTR Regular';
   font-style: normal;
@@ -33,7 +44,7 @@
 }
 
 .title {
-  font-size: 70px;
+  font-size: 50px;
   color: var(--cloudy-white);
   font-family: "NTR Regular";
 }
@@ -51,6 +62,19 @@
   line-height: 1.5;
 }
 
+.footer-text {
+  margin-top: -25px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--dark-gray);
+  font-family: "NTR Regular";
+}
+
+.footer {
+  position: absolute;
+  top: 94%;
+  left: 45%;
+}
 
 
 
