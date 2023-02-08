@@ -2,7 +2,6 @@
 # Portfolio Guide!
 
 Hi! I am currently working on my portfolio as of right now. If you managed to see this, nice :D. Currently, here is a snapshot of my portfolio:
-![Beta Version of Site](https://i.ibb.co/Gth1LTp/beta-port.png)
 
 <p align="center">
   <img src="https://i.ibb.co/Gth1LTp/beta-port.png">
