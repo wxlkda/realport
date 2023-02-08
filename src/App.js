@@ -1,50 +1,14 @@
 import './App.css';
-import './css/Intro.css'
-import './css/About.css'
-import './css/Navigation.css'
+import './css/Intro.css';
+import './css/About.css';
+import './css/Navigation.css';
+
+import React from 'react';
 //import Sidebar from "./otherjs/Sidebar"
 //import HomeIcon from '@mui/icons-material/Home';
 //TODO: Add anchor links after the thing is odne. In order to do this, we gotta add IDS
 
 
-const tabs = [{
-  id: 0,
-  name: "home",
-  link : "#home"
-}, {
-  id: 1,
-  name: "about",
-  link : "#about"
-}, {
-  id: 2,
-  name: "experience",
-  link : "#experience"
-}, {
-  id: 3,
-  name: "projects",
-  link : "#projects"
-}, { 
-  id: 4,
-  name: "socials",
-  link : "#socials"
-}];
-
-const styles = {
-  selected: {
-    textAlign: "center",
-    marginLeft: "3%",
-    color: "#ccd6f6",
-    textDecoration: "none"
-  },
-  default: {
-    textAlign: "center",
-    marginLeft: "3%",
-    color: "#8892b0",
-    textDecoration: "none"
-  }
-};
-
-const selected = 0;
 
 
 function Intro() {
@@ -98,34 +62,67 @@ function Socials() {
   );
 };
 
-function Navigation() {
 
-  function changeColor(e) {
-    e.target.style.color = "#ccd6f6";
+class Navigation extends React.Component {
+  constructor() {
+    super();
+    this.tabs = [
+      {id: 0,name: "home",link : "#home"}, 
+      {id: 1,name: "about",link : "#about"}, 
+      {id: 2,name: "experience",link : "#experience"}, 
+      {id: 3,name: "projects",link : "#projects"}, 
+      {id: 4,name: "socials",link : "#socials"}
+      ];
+
+
+    this.state = {selectedColor : "#ccd6f6", notSelectedColor : "#8892b0"}; 
+
+    this.styles = {
+      selected: {
+        textAlign: "center",
+        marginLeft: "3%",
+        color: this.state.selectedColor,
+        textDecoration: "none"
+      },
+      default: {
+        textAlign: "center",  
+        marginLeft: "3%",
+        color: this.state.notSelectedColor,
+        textDecoration: "none"
+      }
+    };
+
+    this.selected = 0;
+    
+    this.content = <a></a>;
   }
-
-  function resetColor(e) {
-    e.target.style.color = "#8892b0";
+  changeColor = () => {
+    this.setState({selectedColor : "#ccd6f6", notSelectedColor : "#8892b0"});
   }
-
-  function returnJSX(tab) {
-    let content = <a></a>;
-    if (tab.id === selected) {
-      content = <a style = {styles.selected} href={tab.link}>{tab.name}</a>;
+  resetColor = () => {
+    this.setState({selectedColor : "#8892b0", notSelectedColor : "#ccd6f6"});
+  }
+  returnJSX = (tab) => {
+    if (tab.id === this.selected) {
+      this.content = <a style = {this.styles.selected} href={tab.link}>{tab.name}</a>;
     }
     else {
-      content = <a style = {styles.default} href={tab.link} onMouseOver={changeColor} onMouseLeave={resetColor}>{tab.name}</a>;
+      this.content = <a style = {this.styles.default} href={tab.link} onMouseOver={this.changeColor} onMouseLeave={this.resetColor}>{tab.name}</a>;
     }
-    return content;
-  };
+    return this.content;
+  }
+  getTabs = () => {
+    return this.tabs.map(tab => this.returnJSX(tab));
+  }
 
-  const topTabs = tabs.map(tab => returnJSX(tab));
-  return (
-    <li className="tab-top">
-      {topTabs}
-    </li>
-  );
-}
+  render() {
+    return (
+      <li className="tab-top">
+        {this.getTabs()}
+      </li>
+    )
+  };
+};
 
 
 
@@ -145,9 +142,7 @@ export default function App() {
           All rights reserved ©.
         </center>
       </div>
-      </div>
-      
-      
+      </div>  
     </div>
   );
 }

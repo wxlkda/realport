@@ -1,6 +1,6 @@
 # Portfolio Guide!
 Hi! I am currently working on my portfolio as of right now. If you managed to see this, nice :D. Currently, here is a snapshot of my portfolio:
-![Beta Site](https://prnt.sc/qL0ajlVCrZKv)
+![Beta Version of Site](https://i.ibb.co/Gth1LTp/beta-port.png)
 Below are some links and colors I used on my site:
 
 
