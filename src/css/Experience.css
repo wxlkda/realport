@@ -1,0 +1,15 @@
+#experience {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
+    min-width: 15vw;
+}
+
+.experience-info {
+    max-width: 515px;
+    margin-top: -20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
