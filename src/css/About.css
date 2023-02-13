@@ -1,5 +1,5 @@
 #about {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -8,8 +8,18 @@
 }
 
 .about-info {
-    max-width: 515px;
-    margin-top: -20px;
+    max-width: 600px;
+    margin-top: 20px;
     text-align: justify;
     text-justify: inter-word;
+}
+
+.about-image {
+    margin-left: 670px;
+    position: absolute;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+    border: none;
 }
