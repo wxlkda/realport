@@ -7,8 +7,10 @@ import './css/Experience.css';
 import './css/Projects.css';
 
 import React from 'react';
-//import HomeIcon from '@mui/icons-material/Home';
+
+import HomeIcon from '@mui/icons-material/Home';
 //TODO: Add anchor links after the thing is odne. In order to do this, we gotta add IDS
+//DONEEEEE
 
 const me = require('./images/me.png');
 
@@ -45,9 +47,9 @@ function About() {
         <b>/about-me</b>
       </span>
       <div className="about-info body-text">
-        <img src={me} className="about-image" height="320" width="320"></img>
+        <img src={me} className="about-image" height="320" width="320" alt="me"></img>
         I am currently a <b>Computer Science</b> student studying at the <span className="special"><b> Toronto Metropolitan University</b></span> (formerly known as <span className="special">Ryerson</span>).
-        I plan to get a graduate with a Bachelors and aspire to become a <b>Software Engineer</b> at a high-level company.
+        I plan to get a graduate with a Bachelors degree in <b>Computer Science</b> and aspire to become a <b>Software Engineer</b> at a high-level company.
         <br></br>
         <br></br>
         Below are some of the <b>technologies</b> that I am familiar with:
@@ -69,7 +71,7 @@ function About() {
 
 function Experience() {
   return (
-    <div id="experience">
+    <span id="experience">
       <span className="title">
         <b>/experience</b>
       </span>
@@ -83,126 +85,75 @@ function Experience() {
       and more recently with desktop publishing software like Aldus PageMaker including
       versions of Lorem Ipsum.
       </div>
-    </div>
+    </span>
   );
 };
 
-function Projects() {
-  return (
-    <div id="projects">
-      <span className="title">
-        <b>/software-creations</b>
-      </span>
-      <div className="project-info body-text">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type
-      specimen book. It has survived not only five centuries, but also the leap into
-      electronic typesetting, remaining essentially unchanged. It was popularised 
-      in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker including
-      versions of Lorem Ipsum.
+class Projects extends React.Component {
+  constructor() {
+    super();
+    this.projects = [
+      {}
+    ]
+  }
+  render() {
+    return (
+      <div id="projects">
+        <span className="title">
+        <b>/software-innovations</b>
+        </span>
+        <div className="project-info body-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised 
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum.
+        </div>
       </div>
-    </div>
-  );
-};
-
-
-
-function Socials() {
-  return (
-    <div id="socials">
-      <span className="title">
-      <b>/socials</b>
-      </span>
-      <div className="social-info body-text">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type
-      specimen book. It has survived not only five centuries, but also the leap into
-      electronic typesetting, remaining essentially unchanged. It was popularised 
-      in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker including
-      versions of Lorem Ipsum.
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 
 class Navigation extends React.Component {
   constructor() {
     super();
-    this.tabs = [
-      {id: 0,name: "home",link : "#home"}, 
-      {id: 1,name: "about",link : "#about"}, 
-      {id: 2,name: "experience",link : "#experience"}, 
-      {id: 3,name: "projects",link : "#projects"}, 
-      {id: 4,name: "socials",link : "#socials"}
-      ];
-
-
-
-    this.styles = {
-      selected: {
-        textAlign: "center",
-        marginLeft: "3%",
-        color: "#ccd6f6",
-        textDecoration: "none"
-      },
-      default: {
-        textAlign: "center",  
-        marginLeft: "3%",
-        color: "#8892b0",
-        textDecoration: "none"
-      }
-    };
-
-    this.selected = 0;
-    
-    this.content = <a></a>;
-  }
-  changeColor = (event) => {
-    event.target.style.color = "#ccd6f6";
-    
-  }
-  resetColor = (event) => {
-    event.target.style.color = "#8892b0";
-  }
-  returnJSX = (tab) => {
-    if (tab.id === this.selected) {
-      this.content = <a style = {this.styles.selected} href={tab.link} >{tab.name}</a>;
-    }
-    else {
-      this.content = <a style = {this.styles.default} href={tab.link} onMouseOver= {event => this.changeColor(event)} onMouseLeave={event => this.resetColor(event)}>{tab.name}</a>;
-    }
-    return this.content;
-  }
-  getTabs = () => {
-    return this.tabs.map(tab => this.returnJSX(tab));
+    this.tabs = ["home", "about-me", "experience", "projects"]
+    this.state = {currentSection : "home"}
   }
 
   render() {
     return (
-      <li className="tab-top">
-        {this.getTabs()}
-      </li>
-    )
-  };
-};
+      <div id = "sideTabs">
+        <a href="about">
+          <div className = "tab1"></div>
+        </a>
+        <div className = "tab2">
+        </div>
+        <div className = "tab3">
+        </div>
+        <div className = "tab4">
+        </div>
+        <div className = "tab5">
+        </div>
+      </div>
+    );
+  }
 
+}
 
 
 export default function App() {
   return (
     <div className="App">
-      <Navigation></Navigation>  
       <div id="content">
         <Intro></Intro>
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
-        <Socials></Socials>
         <div className="footer">
           <center className="footer-text">
             Made and designed by Alwalid Khan.
@@ -213,6 +164,7 @@ export default function App() {
           </center>
         </div>
       </div>  
+      <Navigation></Navigation>  
     </div>
   );
 }

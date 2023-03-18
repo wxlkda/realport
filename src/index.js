@@ -5,6 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const base = ReactDOM.createRoot(document.getElementById('base'));
+
+var title = "Alwalid " + "- " + Math.random();
+document.title = title;
+
+
+
+
+
 base.render(
   <React.StrictMode>
     <App/>

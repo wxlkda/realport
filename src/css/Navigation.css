@@ -1,9 +1,66 @@
-.tab-top {
-    padding-left: 12.5%;
-    padding-top: 2%;
-    display: flex;
-    flex-direction: row;
-    font-family: "NTR Regular";
-    font-size: 20px;
 
+.tab1 {
+    margin-top: calc(calc(100vh / 2));
+    display: inline-block;
+    border-radius: 10px;
+    width: 7px;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s;
+    
 }
+.tab2 {
+    margin-top: calc(calc(100vh / 2) + 44px);
+    display: inline-block;
+    border-radius: 10px;
+    width: 7px;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s;
+    
+}
+.tab3 {
+    margin-top: calc(calc(100vh / 2) - 44px);
+    display: inline-block;
+    border-radius: 10px;
+    width: 7px;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s;
+    
+}
+.tab4 {
+    margin-top: calc(calc(100vh / 2) - 88px);
+    display: inline-block;
+    border-radius: 10px;
+    width: 7px;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s;
+    
+}
+.tab1:hover {
+    width: 100px;
+}
+.tab2:hover {
+    width: 100px;
+}
+.tab3:hover {
+    width: 100px;
+}
+.tab4:hover {
+    width: 100px;
+}
+
+#sideTabs {
+    position: fixed;
+}
+
