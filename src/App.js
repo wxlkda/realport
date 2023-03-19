@@ -7,18 +7,22 @@ import './css/Experience.css';
 import './css/Projects.css';
 
 import React from 'react';
+import useNav from "./hooks/useNav";
+import { NavContext } from './context/NavContext'
+import { useContext } from 'react';
 
-import HomeIcon from '@mui/icons-material/Home';
 //TODO: Add anchor links after the thing is odne. In order to do this, we gotta add IDS
 //DONEEEEE
 
-const me = require('./images/me.png');
+
+
 
 
 
 function Intro() {
+  const introRef = useNav("intro");
   return (
-      <div id="intro">
+      <div ref = {introRef} id="intro">
         <div className="intro-sentence sentence">
           <span className="intro-notname">
             hi, it's 
@@ -41,8 +45,10 @@ function Intro() {
 };
 
 function About() {
+  const aboutRef = useNav("about");
+  const me = require('./images/me.png');
   return (
-    <div id="about">
+    <div ref = {aboutRef} id="about">
       <span className="title">
         <b>/about-me</b>
       </span>
@@ -61,7 +67,7 @@ function About() {
           <li>React</li>
           <li>Java</li>
           <li>MongoDB</li>
-          <li>Git</li>
+          <li>DevOps</li>
         </ul>
         At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">catan</span>. I sometimes also play online video games with my friends.
       </div>
@@ -70,8 +76,9 @@ function About() {
 };
 
 function Experience() {
+  const experienceRef = useNav("experience");
   return (
-    <span id="experience">
+    <div ref = {experienceRef} id="experience">
       <span className="title">
         <b>/experience</b>
       </span>
@@ -85,63 +92,49 @@ function Experience() {
       and more recently with desktop publishing software like Aldus PageMaker including
       versions of Lorem Ipsum.
       </div>
-    </span>
+    </div>
   );
 };
 
-class Projects extends React.Component {
-  constructor() {
-    super();
-    this.projects = [
-      {}
-    ]
-  }
-  render() {
-    return (
-      <div id="projects">
+function Projects() {
+  const projectsRef = useNav("projects");
+  return (
+    <div ref = {projectsRef} id="projects">
         <span className="title">
-        <b>/software-innovations</b>
+          <b>/software-innovations</b>
         </span>
         <div className="project-info body-text">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was popularised 
-        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-        and more recently with desktop publishing software like Aldus PageMaker including
-        versions of Lorem Ipsum.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised 
+          in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+          and more recently with desktop publishing software like Aldus PageMaker including
+          versions of Lorem Ipsum.
         </div>
       </div>
-    );
-  }
-}
+  );
+};
 
 
-class Navigation extends React.Component {
-  constructor() {
-    super();
-    this.tabs = ["home", "about-me", "experience", "projects"]
-    this.state = {currentSection : "home"}
+function Navigation() {
+  let { activeLinkId } = useContext(NavContext);
+
+  const handleClickNav = (e) => {
+    const class_name = e.target.className;
+    document.getElementById(class_name.substring(0,class_name.length - 3)).scrollIntoView({ behavior: "smooth" });
   }
 
-  render() {
-    return (
-      <div id = "sideTabs">
-        <a href="about">
-          <div className = "tab1"></div>
-        </a>
-        <div className = "tab2">
-        </div>
-        <div className = "tab3">
-        </div>
-        <div className = "tab4">
-        </div>
-        <div className = "tab5">
-        </div>
-      </div>
-    );
-  }
+  return ( 
+    <div id = "sideTabs">
+      <div className = "aboutBar"      onClick = {handleClickNav}></div>
+      <div className = "introBar"      onClick = {handleClickNav}></div>
+      <div className = "experienceBar" onClick = {handleClickNav}></div>
+      <div className = "projectsBar"   onClick = {handleClickNav}></div>
+      <div className = "socialsBar"></div>
+    </div>
+  );
 
 }
 
@@ -149,21 +142,21 @@ class Navigation extends React.Component {
 export default function App() {
   return (
     <div className="App">
-      <div id="content">
-        <Intro></Intro>
-        <About></About>
-        <Experience></Experience>
-        <Projects></Projects>
-        <div className="footer">
-          <center className="footer-text">
-            Made and designed by Alwalid Khan.
-          </center>
-          <br></br>
-          <center className="footer-text">
-            All rights reserved ©.
-          </center>
+        <div id="content">
+          <Intro></Intro>
+          <About></About>
+          <Experience></Experience>
+          <Projects></Projects>
+          <div className="footer">
+            <center className="footer-text">
+              Made and designed by Alwalid Khan.
+            </center>
+            <br></br>
+            <center className="footer-text">
+              All rights reserved ©.
+            </center>
+          </div>
         </div>
-      </div>  
       <Navigation></Navigation>  
     </div>
   );

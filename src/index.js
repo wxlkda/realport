@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavProvider from './context/NavContext'
+
 
 const base = ReactDOM.createRoot(document.getElementById('base'));
 
-var title = "Alwalid " + "- " + Math.random();
+var title = "Alwalid's portfolio";
 document.title = title;
 
 
@@ -15,7 +17,9 @@ document.title = title;
 
 base.render(
   <React.StrictMode>
-    <App/>
+    <NavProvider>
+      <App/>
+    </NavProvider>
   </React.StrictMode>
 );
 

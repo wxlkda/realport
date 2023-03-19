@@ -1,5 +1,5 @@
 
-.tab1 {
+.experienceBar {
     margin-top: calc(calc(100vh / 2));
     display: inline-block;
     border-radius: 10px;
@@ -8,10 +8,14 @@
     position: fixed;
     background-color: var(--cloudy-white);
     transform: translateY(-50%);
-    transition: width 0.25s;
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     
 }
-.tab2 {
+.projectsBar {
     margin-top: calc(calc(100vh / 2) + 44px);
     display: inline-block;
     border-radius: 10px;
@@ -20,10 +24,14 @@
     position: fixed;
     background-color: var(--cloudy-white);
     transform: translateY(-50%);
-    transition: width 0.25s;
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     
 }
-.tab3 {
+.aboutBar {
     margin-top: calc(calc(100vh / 2) - 44px);
     display: inline-block;
     border-radius: 10px;
@@ -32,10 +40,14 @@
     position: fixed;
     background-color: var(--cloudy-white);
     transform: translateY(-50%);
-    transition: width 0.25s;
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     
 }
-.tab4 {
+.introBar {
     margin-top: calc(calc(100vh / 2) - 88px);
     display: inline-block;
     border-radius: 10px;
@@ -44,20 +56,49 @@
     position: fixed;
     background-color: var(--cloudy-white);
     transform: translateY(-50%);
-    transition: width 0.25s;
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     
 }
-.tab1:hover {
+.socialsBar {
+    margin-top: calc(calc(100vh / 2) + 88px);
+    display: inline-block;
+    border-radius: 10px;
+    width: 7px;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.socialsBar:hover {
     width: 100px;
 }
-.tab2:hover {
+
+.experienceBar:hover {
     width: 100px;
+    cursor: pointer;
 }
-.tab3:hover {
+.projectsBar:hover{
     width: 100px;
+    cursor: pointer;
 }
-.tab4:hover {
+.aboutBar:hover {
     width: 100px;
+    cursor: pointer;
+}
+.introBar:hover {
+    width: 100px;
+    cursor: pointer;
 }
 
 #sideTabs {
