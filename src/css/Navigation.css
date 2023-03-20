@@ -80,6 +80,14 @@
     
 }
 
+.introBar:hover, .aboutBar:hover, .experienceBar:hover, .projectsBar:hover, .socialsBar:hover {
+    background-color: var(--dark-gray);
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    cursor: pointer;
+} 
+
 .socialsBarSelected {
     width: 100px;
 }
