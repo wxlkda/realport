@@ -4,7 +4,8 @@ export const useOnScreen = (ref) => {
     const observer = new IntersectionObserver((([entry]) => {
         setIsOnScreen(entry.isIntersecting);
     }), {
-        threshold: 1.0
+        threshold: 1.0,
+        rootMargin: "0px 0px -30px 0px"
     });
 
     useEffect(() => {

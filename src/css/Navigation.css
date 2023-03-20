@@ -80,25 +80,73 @@
     
 }
 
-.socialsBar:hover {
+.socialsBarSelected {
     width: 100px;
 }
 
-.experienceBar:hover {
+.experienceBarSelected {
+    margin-top: calc(calc(100vh / 2));
+    display: inline-block;
+    border-radius: 10px;
     width: 100px;
-    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
 }
-.projectsBar:hover{
+.projectsBarSelected {
+    margin-top: calc(calc(100vh / 2) + 44px);
+    display: inline-block;
+    border-radius: 10px;
     width: 100px;
-    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
 }
-.aboutBar:hover {
+.aboutBarSelected {
+    margin-top: calc(calc(100vh / 2) - 44px);
+    display: inline-block;
+    border-radius: 10px;
     width: 100px;
-    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
 }
-.introBar:hover {
+.introBarSelected {
+    margin-top: calc(calc(100vh / 2) - 88px);
+    display: inline-block;
+    border-radius: 10px;
     width: 100px;
-    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    background-color: var(--cloudy-white);
+    transform: translateY(-50%);
+    transition: width 0.25s ease;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
 }
 
 #sideTabs {

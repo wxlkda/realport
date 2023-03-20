@@ -7,14 +7,9 @@ import './css/Experience.css';
 import './css/Projects.css';
 
 import React from 'react';
+import { useContext } from 'react';
 import useNav from "./hooks/useNav";
 import { NavContext } from './context/NavContext'
-import { useContext } from 'react';
-
-//TODO: Add anchor links after the thing is odne. In order to do this, we gotta add IDS
-//DONEEEEE
-
-
 
 
 
@@ -37,8 +32,9 @@ function Intro() {
         Some inspiring text here that will inspire here single person that reads this message. Some inspiring text here that will inspire here single person that reads this message.   
         </span>
         <br></br>
+        
         <div className="messageBox special">
-          <b>Say Hi!</b>
+        <b>Say Hi!</b>
         </div>
       </div>
   );
@@ -55,7 +51,7 @@ function About() {
       <div className="about-info body-text">
         <img src={me} className="about-image" height="320" width="320" alt="me"></img>
         I am currently a <b>Computer Science</b> student studying at the <span className="special"><b> Toronto Metropolitan University</b></span> (formerly known as <span className="special">Ryerson</span>).
-        I plan to get a graduate with a Bachelors degree in <b>Computer Science</b> and aspire to become a <b>Software Engineer</b> at a high-level company.
+        I plan to get a graduate with a Bachelors degree in <b>Computer Science</b> and aspire to become a <b>Software Engineer</b> at a good company.
         <br></br>
         <br></br>
         Below are some of the <b>technologies</b> that I am familiar with:
@@ -120,6 +116,14 @@ function Projects() {
 
 function Navigation() {
   let { activeLinkId } = useContext(NavContext);
+  let tabs = ["intro", "about", "experience", "projects"]
+
+  const returnJSX = (content) => {
+    let finalThing = content.map((content) => 
+    <div className = {activeLinkId === content ? `${content}BarSelected` : `${content}Bar` } onClick = {handleClickNav}></div>
+    );
+    return finalThing;
+  }
 
   const handleClickNav = (e) => {
     const class_name = e.target.className;
@@ -128,10 +132,7 @@ function Navigation() {
 
   return ( 
     <div id = "sideTabs">
-      <div className = "aboutBar"      onClick = {handleClickNav}></div>
-      <div className = "introBar"      onClick = {handleClickNav}></div>
-      <div className = "experienceBar" onClick = {handleClickNav}></div>
-      <div className = "projectsBar"   onClick = {handleClickNav}></div>
+      {returnJSX(tabs)}
       <div className = "socialsBar"></div>
     </div>
   );
