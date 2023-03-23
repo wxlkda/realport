@@ -11,6 +11,13 @@ import { useContext } from 'react';
 import useNav from "./hooks/useNav";
 import { NavContext } from './context/NavContext'
 
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+import Link from '@mui/material/Link';
+
+
+
 
 
 
@@ -127,13 +134,27 @@ function Navigation() {
 
   const handleClickNav = (e) => {
     const class_name = e.target.className;
-    document.getElementById(class_name.substring(0,class_name.length - 3)).scrollIntoView({ behavior: "smooth" });
+    document.getElementById(class_name.substring(0,class_name.length - 3)).scrollIntoView({ behavior: "smooth", easing: "linear" });
   }
+
 
   return ( 
     <div id = "sideTabs">
       {returnJSX(tabs)}
-      <div className = "socialsBar"></div>
+      <div className = "socialsBar">
+        <Link href="https://github.com/wxlkda" className="githubIcon" target="_blank">
+          <GitHubIcon />
+        </Link>
+        <Link href="https://www.linkedin.com/in/alwalidkhan/" className="linkedinIcon" target="_blank">
+          <LinkedInIcon/>
+        </Link>
+        <Link href="mailto:alwalid23dec@gmail.com?subject=Hello!" className="emailIcon">
+          <EmailIcon />
+        </Link>
+      
+        
+        
+      </div>
     </div>
   );
 

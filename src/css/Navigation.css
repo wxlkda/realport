@@ -80,6 +80,53 @@
     
 }
 
+.socialsBar > a {
+    visibility: none;
+    opacity: 0;
+    transition: visibility 0s, opacity 0s linear;
+}
+
+
+.socialsBar:hover {
+    width: 120px;  
+    display:grid;
+    grid-template-columns: repeat(3, minmax(20px, 33px));
+}
+
+.socialsBar:hover > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    grid-template-columns: repeat(3, minmax(12px, max-content));
+    transition: visibility 0s, opacity 0.51s linear;
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+.linkedinIcon {
+    transform: scale(1.2);
+    color: black;
+    text-decoration-color: black;
+    
+  }
+
+.githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover{
+    color: rgb(84,84,84);
+    text-decoration-color: rgb(84,84,84);
+}
+  
+.emailIcon {
+    transform: scale(1.2);
+    color: black;
+    text-decoration-color: black;
+}
+
+  
+
 .introBar:hover, .aboutBar:hover, .experienceBar:hover, .projectsBar:hover{
     background-color: var(--dark-gray);
     -webkit-transition: background-color 200ms linear;
@@ -88,13 +135,8 @@
     cursor: pointer;
 } 
 
-.socialsBar:hover {
-    width: 100px;
-}
 
-.socialsBarSelected {
-    width: 100px;
-}
+
 
 .experienceBarSelected {
     margin-top: calc(calc(100vh / 2));
