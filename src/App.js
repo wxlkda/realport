@@ -142,15 +142,15 @@ function Navigation() {
     <div id = "sideTabs">
       {returnJSX(tabs)}
       <div className = "socialsBar">
-        <Link href="https://github.com/wxlkda" className="githubIcon" target="_blank">
+        <a href="https://github.com/wxlkda" className="githubIcon" target="_blank">
           <GitHubIcon />
-        </Link>
-        <Link href="https://www.linkedin.com/in/alwalidkhan/" className="linkedinIcon" target="_blank">
+        </a>
+        <a href="https://www.linkedin.com/in/alwalidkhan/" className="linkedinIcon" target="_blank">
           <LinkedInIcon/>
-        </Link>
-        <Link href="mailto:alwalid23dec@gmail.com?subject=Hello!" className="emailIcon">
+        </a>
+        <a href="mailto:alwalid23dec@gmail.com?subject=Hello!" className="emailIcon">
           <EmailIcon />
-        </Link>
+        </a>
       
         
         

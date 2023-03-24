@@ -107,23 +107,23 @@
 }
 
 
-.linkedinIcon {
+.linkedinIcon, .emailIcon {
     transform: scale(1.2);
-    color: black;
-    text-decoration-color: black;
-    
-  }
+    color: var(--highlight-color);
+    text-decoration-color: var(--highlight-color);   
+}
+.githubIcon {
+    color: var(--highlight-color);
+    text-decoration-color: var(--highlight-color);  
+}
 
 .githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover{
-    color: rgb(84,84,84);
-    text-decoration-color: rgb(84,84,84);
+    color: rgb(122,122,122);
+    text-decoration-color: rgb(122,122,122);
+    
 }
+
   
-.emailIcon {
-    transform: scale(1.2);
-    color: black;
-    text-decoration-color: black;
-}
 
   
 
