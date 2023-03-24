@@ -14,8 +14,6 @@ import { NavContext } from './context/NavContext'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import Link from '@mui/material/Link';
-
 
 
 
@@ -142,13 +140,13 @@ function Navigation() {
     <div id = "sideTabs">
       {returnJSX(tabs)}
       <div className = "socialsBar">
-        <a href="https://github.com/wxlkda" className="githubIcon" target="_blank">
+        <a href="https://github.com/wxlkda" className="githubIcon" target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
         </a>
-        <a href="https://www.linkedin.com/in/alwalidkhan/" className="linkedinIcon" target="_blank">
+        <a href="https://www.linkedin.com/in/alwalidkhan/" className="linkedinIcon" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon/>
         </a>
-        <a href="mailto:alwalid23dec@gmail.com?subject=Hello!" className="emailIcon">
+        <a href="mailto:alwalid23dec@gmail.com?subject=Hello!" className="emailIcon" rel="noopener noreferrer">
           <EmailIcon />
         </a>
       
