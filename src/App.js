@@ -1,10 +1,10 @@
 import './App.css';
-import './css/Intro.css';
-import './css/About.css';
-import './css/Navigation.css';
-import './css/Socials.css';
-import './css/Experience.css';
-import './css/Projects.css';
+import './css/intro.css';
+import './css/about.css';
+import './css/navigation.css';
+import './css/socials.css';
+import './css/experience.css';
+import './css/projects.css';
 
 import React from 'react';
 import { useContext } from 'react';
