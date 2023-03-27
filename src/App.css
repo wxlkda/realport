@@ -13,7 +13,7 @@
 }
 
 .messageBox {
-  border-radius: 5px;
+  border-radius: 4px;
   width: 130px;
   height: 60px;
   border: 1px solid var(--light-blue);
@@ -23,7 +23,23 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  text-decoration: none;
 }
+
+.messageBox:hover {
+  background-color: #1e314e;
+  text-decoration-color: #ccd6f6;
+}
+
+.messageBox:hover .messageBoxText {
+  font-family: "NTR Regular";
+  color: var(--cloudy-white);
+}
+.messageBoxText {
+  font-family: "NTR Regular";
+  color: var(--light-blue);
+}
+
 
 
 .about-info ul {

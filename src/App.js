@@ -37,9 +37,11 @@ function Intro() {
         </span>
         <br></br>
         
-        <div className="messageBox special">
-        <b>Say Hi!</b>
-        </div>
+        <a className="messageBox" href="mailto:alwalid23dec@gmail.com?subject=Hello!" rel="noopener noreferrer">
+          <span className="messageBoxText">
+            <b>Say Hi!</b>
+          </span>
+        </a>
       </div>
   );
 };
