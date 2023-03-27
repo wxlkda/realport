@@ -138,7 +138,7 @@
 
 
 
-.experienceBarSelected {
+.projectsBarSelected {
     margin-top: calc(calc(100vh / 2));
     display: inline-block;
     border-radius: 10px;
@@ -154,7 +154,7 @@
     flex-direction: column;
     
 }
-.projectsBarSelected {
+.experienceBarSelected {
     margin-top: calc(calc(100vh / 2) + 44px);
     display: inline-block;
     border-radius: 10px;
