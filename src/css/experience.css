@@ -1,19 +1,14 @@
-/*ABOUT ME*/
-#intro {
+#experience {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 15%;
-    padding-top: 2%;
     min-width: 15vw;
-    
 }
-.intro-rt {
-    margin-top: -70px;
-}
-.intro-inspirational {
+
+.experience-info {
     max-width: 600px;
-    margin-top: -15px;
+    margin-top: 20px;
     text-align: justify;
     text-justify: inter-word;
 }

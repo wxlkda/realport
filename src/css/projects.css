@@ -1,4 +1,5 @@
-#experience {
+#projects {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -6,7 +7,7 @@
     min-width: 15vw;
 }
 
-.experience-info {
+.project-info {
     max-width: 600px;
     margin-top: 20px;
     text-align: justify;
