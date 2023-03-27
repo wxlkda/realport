@@ -8,7 +8,7 @@ import NavProvider from './context/NavContext'
 
 const base = ReactDOM.createRoot(document.getElementById('base'));
 
-var title = "portfolio";
+var title = "Alwalid";
 document.title = title;
 
 
