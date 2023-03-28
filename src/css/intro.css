@@ -1,4 +1,3 @@
-/*ABOUT ME*/
 #intro {
     display: flex;
     flex-direction: column;
@@ -8,12 +7,120 @@
     min-width: 15vw;
     
 }
+.intro-sentence {
+    font-size: 85px;
+    color: var(--cloudy-white);
+    font-family: "NTR Regular";
+}
+.intro-name {
+    font-family: "NTR Regular";
+    color: var(--light-blue);
+}
 .intro-rt {
     margin-top: -70px;
+    font-family: "NTR Regular";
+    color: var(--dark-gray);
+    font-size: 45px;
 }
+
 .intro-inspirational {
     max-width: 600px;
     margin-top: -15px;
     text-align: justify;
     text-justify: inter-word;
+    font-family: "NTR Regular";
+    color: var(--dark-gray);
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+    transform: translateY(25%);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.messageBox {
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: 1px solid var(--light-blue);
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+.messageBox:hover {
+    background-color: #1e314e;
+    text-decoration-color: #ccd6f6;
+}
+  
+.messageBox:hover .messageBoxText {
+font-family: "NTR Regular";
+color: var(--cloudy-white);
+}
+.messageBoxText {
+font-family: "NTR Regular";
+color: var(--light-blue);
+}
+
+@media only screen and (max-width: 800px) {
+  
+    #intro {
+        height: unset;
+        padding-left: unset;
+        padding-right: unset;
+      
+    }
+  
+    
+  
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .intro-sentence {
+        font-size: 46px;
+        justify-content: center;
+        justify-content: center;
+        text-align: center;
+        text-justify: center;
+      }
+      .intro-name {
+        font-size: 46px;
+        justify-content: center;
+        justify-content: center;
+        text-align: center;
+        text-justify: center;
+      }
+      .intro-rt {
+        margin: 0;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .intro-inspirational {
+        font-size: 18px;
+        max-width: 80vw;
+        margin-right: 60px;
+        text-align: center;
+      }
+      .messageBox {
+        font-size: 16px;
+        margin-left: 0;
+        margin-left: 20%;
+    }
 }

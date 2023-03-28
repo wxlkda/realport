@@ -12,67 +12,13 @@
   
 }
 
-.messageBox {
-  border-radius: 4px;
-  width: 130px;
-  height: 60px;
-  border: 1px solid var(--light-blue);
-  font-size: 20px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.messageBox:hover {
-  background-color: #1e314e;
-  text-decoration-color: #ccd6f6;
-}
-
-.messageBox:hover .messageBoxText {
-  font-family: "NTR Regular";
-  color: var(--cloudy-white);
-}
-.messageBoxText {
-  font-family: "NTR Regular";
-  color: var(--light-blue);
-}
-
-.isLinked {
-  text-decoration: none;
-}
-
-.isLinked:hover {
-  font-family: "NTR Regular";
-  color: var(--cloudy-white);
-  
-}
 
 
-.about-info ul {
-  font-family: "NTR Regular";
-  list-style-type: none;
-  padding-left: 0px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 10px));
-}
 
-.about-info li {
-  position: relative;
-  font-family: "NTR Regular";
-  padding-left: 20px;
-  font-size: 18px;
-  color: var(--dark-gray);
-}
 
-.skills li::before {
-  content: "▸ ";
-  color: var(--light-blue);
-  position: absolute;
-  left: 0;
-}
+
+
+
 
 @font-face {
   font-family: 'NTR Regular';
@@ -87,6 +33,7 @@
 }
 
 
+
 .sentence {
   font-size: 85px;
   color: var(--cloudy-white);
@@ -94,7 +41,7 @@
 }
 
 .title {
-  font-size: 45px;
+  font-size: 50px;
   color: var(--cloudy-white);
   font-family: "NTR Regular";
 }
@@ -126,7 +73,6 @@
   margin-top: 90px;
   margin-bottom: 10px;
 }
-
 
 
 ::selection {

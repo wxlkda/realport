@@ -11,4 +11,8 @@
     margin-top: 20px;
     text-align: justify;
     text-justify: inter-word;
+    font-family: "NTR Regular";
+    color: var(--dark-gray);
+    font-size: 22px;
+    line-height: 1.5;
 }
