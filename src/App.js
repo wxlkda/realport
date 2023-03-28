@@ -56,8 +56,8 @@ function About() {
       </span>
       <div className="about-info body-text">
         <img src={me} className="about-image" height="320" width="320" alt="me"></img>
-        I am currently a <b>Computer Science</b> student studying at the <span className="special"><b> Toronto Metropolitan University</b></span> (formerly known as <span className="special">Ryerson</span>).
-        I plan to get a graduate with a Bachelors degree in <b>Computer Science</b> and aspire to become a <b>Software Engineer</b> at a good company.
+        I am currently a <b>Computer Science</b> student studying at the <span className="special"><b><a href="https://www.torontomu.ca/" target="_blank" rel="noopener noreferrer" className=" special isLinked">  Toronto Metropolitan University</a></b></span> (formerly known as <span className="special">Ryerson</span>).
+        I plan to get a graduate with a Bachelors degree in <b>Computer Science</b> and aspire to become a <b>Software Engineer</b> at a proficient company.
         <br></br>
         <br></br>
         Below are some of the <b>technologies</b> that I am familiar with:

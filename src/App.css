@@ -40,6 +40,15 @@
   color: var(--light-blue);
 }
 
+.isLinked {
+  text-decoration: none;
+}
+
+.isLinked:hover {
+  font-family: "NTR Regular";
+  color: var(--cloudy-white);
+  
+}
 
 
 .about-info ul {
