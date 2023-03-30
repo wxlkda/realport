@@ -40,7 +40,7 @@ function Intro() {
         <a className="messageBox" href="mailto:alwalid23dec@gmail.com?subject=Hello!" rel="noopener noreferrer">
           <span className="messageBoxText">
           
-          <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"></path></svg>
+          <svg class="MuiSvgIcon-root sayEmail" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"></path></svg>
           Say hi!
           </span>
         </a>
@@ -58,8 +58,8 @@ function About() {
       </div>
       <div className="about-info">
         <div className = "about-content">
-          I am currently a <b>Computer Science</b> student studying at the <span className="special"><b><a href="https://www.torontomu.ca/" target="_blank" rel="noopener noreferrer" className=" special isLinked">  Toronto Metropolitan University</a></b></span> (formerly known as <span className="special">Ryerson</span>).
-          I plan to get a graduate with a Bachelors degree in <b>Computer Science</b> and aspire to become a <b>Software Engineer</b> at a proficient company.
+          I am currently a <b>Computer Science</b> undergraduate studying at the <span className="special"><b><a href="https://www.torontomu.ca/" target="_blank" rel="noopener noreferrer" className=" special isLinked">  Toronto Metropolitan University</a></b></span> (formerly known as <span className="special">Ryerson</span>).
+          I plan to graduate with a Bachelors degree in <b>Computer Science</b> and aspire to become a <b>Software Engineer</b> at a proficient company.
           <br></br>
           <br></br>
           Below are some of the <b>technologies</b> that I am familiar with:
@@ -73,7 +73,7 @@ function About() {
             <li>MongoDB</li>
             <li>DevOps</li>
           </ul>
-          At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">catan</span>. I sometimes also play online video games with my friends.
+          At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">Catan</span>. I also play online video games with my friends.
         </div>
         <div className="about-image">
           <img src={me} height="300" width="300" alt="me"></img>
