@@ -2,7 +2,6 @@ import './App.css';
 import './css/intro.css';
 import './css/about.css';
 import './css/navigation.css';
-import './css/socials.css';
 import './css/experience.css';
 import './css/projects.css';
 
@@ -148,7 +147,7 @@ function Navigation() {
 
   const returnJSX = (content) => {
     let finalThing = content.map((content) => 
-    <div className = {activeLinkId === content ? `${content}BarSelected` : `${content}Bar` } onClick = {handleClickNav}></div>
+    <div className = {activeLinkId === content ? `${content}Selected` : `${content}Bar` } data-label = {content} onClick = {handleClickNav}></div>
     );
     return finalThing;
   }

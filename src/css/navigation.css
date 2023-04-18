@@ -1,68 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 
-.projectsBar {
-    margin-top: calc(calc(100vh / 2));
-    display: inline-block;
-    border-radius: 10px;
-    width: 7px;
-    height: 40px;
-    position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
+:root {
+    --buttonColor: #F5EFE1;
 }
-.experienceBar  {
-    margin-top: calc(calc(100vh / 2) + 44px);
-    display: inline-block;
+
+.btn, .introBar, .introBar::before, .introSelected, .introSelected::before, .aboutSelected, .aboutSelected::before, .aboutBar, .aboutBar::before, .projectsSelected, .projectsSelected::before, .projectsBar::before, .projectsBar, .experienceBar::before, .experienceBar, .experienceSelected, .experienceSelected::before{
+    border: 2px solid #e2d0a8;
     border-radius: 10px;
-    width: 7px;
-    height: 40px;
+    cursor: pointer;
+    min-width: 100px;
+    min-height: 40px;
+  }
+  
+  .projectsBar {
+    margin-top: calc(calc(100vh / 2) + 20px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
     position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
-}
-.aboutBar {
-    margin-top: calc(calc(100vh / 2) - 44px);
-    display: inline-block;
-    border-radius: 10px;
-    width: 7px;
-    height: 40px;
+    transform: skewX(0deg);
+  }
+
+  .aboutBar {
+    margin-top: calc(calc(100vh / 2) - 35px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
     position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
-}
-.introBar {
-    margin-top: calc(calc(100vh / 2) - 88px);
-    display: inline-block;
-    border-radius: 10px;
-    width: 7px;
-    height: 40px;
+    transform: skewX(0deg);
+  }
+
+  .experienceBar {
+    margin-top: calc(calc(100vh / 2) + 75px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
     position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
+    transform: skewX(0deg);
+  }
+  
+  .introBar {
+    margin-top: calc(calc(100vh / 2) - 90px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    position: fixed;
+    transform: skewX(0deg);
+  }
+
+
+.projectsBar::before, .experienceBar::before, .aboutBar::before, .introBar::before {
+    content: attr(data-label);
+    background: #F5EFE1;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -0.7rem;
+    right: -0.7rem;
+    z-index: -1;
+    transition: all 0.3s ease;
 }
+.aboutSelected {
+    margin-top: calc(calc(100vh / 2) - 35px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    position: fixed;
+    transform: skewX(0deg);
+  }
+
+.projectsSelected {
+    margin-top: calc(calc(100vh / 2) + 20px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    position: fixed;
+    transform: skewX(0deg);
+  }
+  .aboutSelected::before {
+    content: attr(data-label);
+    background: #F5EFE1;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: #f1e9d6;
+    top: -5px;
+    right: -5px;
+}
+.projectsSelected::before {
+    content: attr(data-label);
+    background: #F5EFE1;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: #f1e9d6;
+    top: -5px;
+    right: -5px;
+}
+
+  .experienceSelected {
+    margin-top: calc(calc(100vh / 2) + 75px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    position: fixed;
+    transform: skewX(0deg);
+  }
+.experienceSelected::before {
+    content: attr(data-label);
+    background: #F5EFE1;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: #f1e9d6;
+    top: -5px;
+    right: -5px;
+  }
+
+  .introSelected::before {
+    content: attr(data-label);
+    background: #F5EFE1;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: #f1e9d6;
+    top: -5px;
+    right: -5px;
+  }
+  .introSelected {
+    margin-top: calc(calc(100vh / 2) - 90px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    position: fixed;
+    transform: skewX(0deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+.socialsBar {
+    display: none;
+}
+/* 
 .socialsBar {
     margin-top: calc(calc(100vh / 2) + 88px);
     display: inline-block;
@@ -123,85 +242,11 @@
     
 }
 
+*/
   
 
   
 
-.introBar:hover, .aboutBar:hover, .experienceBar:hover, .projectsBar:hover{
-    background-color: var(--dark-gray);
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-    cursor: pointer;
-} 
-
-
-
-
-.projectsBarSelected {
-    margin-top: calc(calc(100vh / 2));
-    display: inline-block;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
-}
-.experienceBarSelected {
-    margin-top: calc(calc(100vh / 2) + 44px);
-    display: inline-block;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
-}
-.aboutBarSelected {
-    margin-top: calc(calc(100vh / 2) - 44px);
-    display: inline-block;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
-}
-.introBarSelected {
-    margin-top: calc(calc(100vh / 2) - 88px);
-    display: inline-block;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
-}
 
 #sideTabs {
     position: fixed;
