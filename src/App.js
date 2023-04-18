@@ -161,8 +161,8 @@ function Navigation() {
   return ( 
     <div id = "sideTabs">
       {returnJSX(tabs)}
-      <div className = "socialsBar">
-        <a href="https://github.com/wxlkda" className="githubIcon" target="_blank" rel="noopener noreferrer">
+      <div className = "socialsBar" data-label="socials">
+       <a href="https://github.com/wxlkda" className="githubIcon" target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
         </a>
         <a href="https://www.linkedin.com/in/alwalidkhan/" className="linkedinIcon" target="_blank" rel="noopener noreferrer">
@@ -170,8 +170,7 @@ function Navigation() {
         </a>
         <a href="mailto:alwalid23dec@gmail.com?subject=Hello!" className="emailIcon" rel="noopener noreferrer">
           <EmailIcon />
-        </a>
-      
+        </a>     
         
         
       </div>
