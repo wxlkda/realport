@@ -12,6 +12,13 @@
     min-height: 40px;
   }
   
+.socialsBar, .socialsBar::before {
+  border: 2px solid #e2d0a8;
+  border-radius: 10px;
+  min-width: 100px;
+  min-height: 40px;
+}
+  
   .projectsBar {
     margin-top: calc(calc(100vh / 2) + 20px);
     background: #e2d0a8;
@@ -55,11 +62,21 @@
     position: fixed;
     transform: skewX(0deg);
   }
+  .socialsBar {
+    margin-top: calc(calc(100vh / 2) + 130px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    position: fixed;
+    transform: skewX(0deg);
+  }
 
 
-.projectsBar::before, .experienceBar::before, .aboutBar::before, .introBar::before {
+.projectsBar::before, .experienceBar::before, .aboutBar::before, .introBar::before, .socialsBar::before {
     content: attr(data-label);
-    background: #F5EFE1;
+    background: var(--buttonColor);
     display: grid;
     place-items: center;
     position: absolute;
@@ -91,7 +108,7 @@
   }
   .aboutSelected::before {
     content: attr(data-label);
-    background: #F5EFE1;
+    background: var(--buttonColor);
     display: grid;
     place-items: center;
     position: absolute;
@@ -105,7 +122,7 @@
 }
 .projectsSelected::before {
     content: attr(data-label);
-    background: #F5EFE1;
+    background: var(--buttonColor);
     display: grid;
     place-items: center;
     position: absolute;
@@ -130,7 +147,7 @@
   }
 .experienceSelected::before {
     content: attr(data-label);
-    background: #F5EFE1;
+    background: var(--buttonColor);
     display: grid;
     place-items: center;
     position: absolute;
@@ -145,7 +162,7 @@
 
   .introSelected::before {
     content: attr(data-label);
-    background: #F5EFE1;
+    background: var(--buttonColor);
     display: grid;
     place-items: center;
     position: absolute;
@@ -170,80 +187,63 @@
 
 
 
-
-
-
-
-
-
-
-
-.socialsBar {
+.socialsBar > a{
     display: none;
 }
-/* 
-.socialsBar {
-    margin-top: calc(calc(100vh / 2) + 88px);
-    display: inline-block;
-    border-radius: 10px;
-    width: 7px;
-    height: 40px;
-    position: fixed;
-    background-color: var(--cloudy-white);
-    transform: translateY(-50%);
-    transition: width 0.25s ease;
-    text-align: center;
+
+.socialsBar:hover > a {
+  display: grid;
     justify-content: center;
-    align-content: center;
+  align-items: center;
     flex-direction: column;
-    
+  grid-template-columns: repeat(3, minmax(8px, 9px));
 }
 
-.socialsBar > a {
-    visibility: none;
-    opacity: 0;
-    transition: visibility 0s, opacity 0s linear;
+
+
+.socialsBar:hover::before {
+    content: "";
+    background: var(--buttonColor);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: #f1e9d6;
+    top: -5px;
+    right: -5px;
 }
 
 
 .socialsBar:hover {
-    width: 120px;  
-    display:grid;
-    grid-template-columns: repeat(3, minmax(20px, 33px));
-}
-
-.socialsBar:hover > a {
+    margin-top: calc(calc(100vh / 2) + 130px);
+    background: #e2d0a8;
+    color: #7b6229;
+    font-family: "NTR Regular";
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    position: fixed;
+    transform: skewX(0deg);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 0px;
-    grid-template-columns: repeat(3, minmax(12px, max-content));
-    transition: visibility 0s, opacity 0.51s linear;
-    visibility: visible;
-    opacity: 1;
-
 }
 
 
 .linkedinIcon, .emailIcon {
-    transform: scale(1.2);
-    color: var(--highlight-color);
-    text-decoration-color: var(--highlight-color);   
+  transform: scale(1);
+  color: #7b6229; 
 }
 .githubIcon {
-    color: var(--highlight-color);
-    text-decoration-color: var(--highlight-color);  
+  transform: scale(1);
+  color: #7b6229;   
 }
 
 .githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover{
-    color: rgb(122,122,122);
-    text-decoration-color: rgb(122,122,122);
+  color: #7b6229; 
     
 }
 
-*/
-  
 
   
 
