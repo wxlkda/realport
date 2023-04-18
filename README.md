@@ -9,43 +9,29 @@ Hi! I am currently working on my portfolio as of right now. If you managed to se
 
 Below are some links and colors I used on my site:
 
-  
-  
 ## Colors
 
-|Color|Color Code|
-|--|--|
-|`Background`|`#0A192F2`|
-|`Text Highlight Color`|`#112B52`|
-|`Text Color`|`#8892B0`|
-|`Special Text/Icon Colors`|`#61DAFB`|
-|`Button Colors`|`#E2D0A8`|
-
-
-  
+| Color                        | Color Code   |
+| ---------------------------- | ------------ |
+| `Background`               | `#0A192F2` |
+| `Text Highlight Color`     | `#112B52`  |
+| `Text Color`               | `#8892B0`  |
+| `Special Text/Icon Colors` | `#61DAFB`  |
+| `Button Colors`            | `#E2D0A8`  |
 
 ## Assets
 
 Insert Assets Here
 
-  
-
 ## Future Plans
 
 Below is a list of projects that I have completed or I plan to work on in the future to further enhance my knowledge:
 
-  
-
-- [x] Finish this site [Deployed on alwalidkhan.com, not finished yet]
-
-- [x] Add some small projects (1 or 2) [Just need to add them on site and push to github]
-
+- [X] Finish this site [Deployed on alwalidkhan.com, not finished yet]
+- [X] Add some small projects (1 or 2) [Just need to add them on site and push to github]
 - [ ] Focus on DSA and Leetcode Grinding
-
-- [x] Daily Leetcode (start off easy, go medium as I get better, then harder) [Started as off Feb 3, 2023]
-
+- [X] Daily Leetcode (start off easy, go medium as I get better, then harder) [Started as off Feb 3, 2023]
 - [ ] Add more projects that focuses on System Design, AWS/Google Cloud, and ML
-
 - [ ] Get a SWE Internship at a good company :D
 
 <!---
