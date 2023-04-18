@@ -4,7 +4,7 @@
 Hi! I am currently working on my portfolio as of right now. If you managed to see this, it means I made the repo public, nice :D. Currently, here is a snapshot of my portfolio:
 
 <p align="center">
-  <img src="https://i.ibb.co/Gth1LTp/beta-port.png">
+  <img src="https://i.ibb.co/HqTMwPt/image.png">
 </p>
 
 Below are some links and colors I used on my site:
@@ -19,6 +19,7 @@ Below are some links and colors I used on my site:
 |`Text Highlight Color`|`#112B52`|
 |`Text Color`|`#8892B0`|
 |`Special Text/Icon Colors`|`#61DAFB`|
+|`Button Colors`|`#E2D0A8`|
 
 
   
@@ -35,9 +36,9 @@ Below is a list of projects that I have completed or I plan to work on in the fu
 
   
 
-- [ ] Finish this site
+- [x] Finish this site [Deployed on alwalidkhan.com, not finished yet]
 
-- [ ] Add some small projects (1 or 2)
+- [x] Add some small projects (1 or 2) [Just need to add them on site and push to github]
 
 - [ ] Focus on DSA and Leetcode Grinding
 
