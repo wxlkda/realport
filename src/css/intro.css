@@ -9,6 +9,9 @@
 }
 .intro-sentence {
     font-size: 85px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: normal;
     color: var(--cloudy-white);
     font-family: "NTR Regular";
 }
@@ -18,6 +21,8 @@
 }
 .intro-rt {
     margin-top: -70px;
+    text-align: justify;
+    text-justify: inter-word;
     font-family: "NTR Regular";
     color: var(--dark-gray);
     font-size: 45px;
@@ -78,6 +83,64 @@ font-family: "NTR Regular";
 color: var(--light-blue);
 }
 
+@media only screen and (max-width: 600px) {
+    body .intro-sentence {
+        font-size: 50px;
+        margin: 0;
+        margin-left: 10vw;
+        text-align: center;
+        max-width: 80vw;
+        margin-right: 60px;
+        text-align: center;
+      }
+    body .intro-name {
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+    }
+    body .intro-rt {
+        margin: 0;
+        margin-top: -50px;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+        
+
+    .intro-inspirational {
+        font-size: 18px;
+        text-align: center;
+    }
+    .messageBox {
+        font-size: 16px;
+        margin-left: 25vw;  
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .intro-sentence {
+        font-size: 75px;
+        margin: 0;
+        text-align: center;
+        max-width: 80vw;
+        margin-right: 60px;
+        text-align: center;
+      }
+      .intro-name {
+        font-size: 75px;
+        margin: 0;
+        text-align: center;
+      }
+      .intro-rt {
+        margin: 0;
+        margin-top: -60px;
+        font-size: 40px;
+        justify-content: center;
+        text-align: center;
+      }
+}
+
 @media only screen and (max-width: 800px) {
   
     #intro {
@@ -86,44 +149,12 @@ color: var(--light-blue);
         padding-right: unset;
       
     }
-  
-    
-  
-    
-}
-
-@media only screen and (max-width: 600px) {
-    .intro-sentence {
-        font-size: 46px;
-        justify-content: center;
-        justify-content: center;
-        text-align: center;
-        text-justify: center;
-      }
-      .intro-name {
-        font-size: 46px;
-        justify-content: center;
-        justify-content: center;
-        text-align: center;
-        text-justify: center;
-      }
-      .intro-rt {
-        margin: 0;
-        margin-top: -20px;
-        margin-bottom: 10px;
-        font-size: 25px;
-        justify-content: center;
-        text-align: center;
-      }
       .intro-inspirational {
-        font-size: 18px;
-        max-width: 80vw;
+        max-width: 500px;
         margin-right: 60px;
-        text-align: center;
       }
-      .messageBox {
-        font-size: 16px;
-        margin-left: 0;
-        margin-left: 20%;
-    }
+  
+    
+  
+    
 }

@@ -154,7 +154,13 @@ function Navigation() {
 
   const handleClickNav = (e) => {
     const class_name = e.target.className;
-    document.getElementById(class_name.substring(0,class_name.length - 3)).scrollIntoView({ behavior: "smooth", easing: "linear" });
+    try {
+      document.getElementById(class_name.substring(0,class_name.length - 3)).scrollIntoView({ behavior: "smooth", easing: "linear" });
+    }
+    catch(err) {
+      alert(class_name);
+    }
+    
   }
 
 
