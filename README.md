@@ -4,7 +4,7 @@
 Hi! I am currently working on my portfolio as of right now. If you managed to see this, it means I made the repo public, nice :D. Currently, here is a snapshot of my portfolio:
 
 <p align="center">
-  <img src="https://i.ibb.co/HqTMwPt/image.png">
+  <img src="https://i.ibb.co/NLvMfVT/image.png">
 </p>
 
 Below are some links and colors I used on my site:
