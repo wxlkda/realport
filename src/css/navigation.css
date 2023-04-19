@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
-
 :root {
     --buttonColor: var(--cloudy-white ); 
     --borderColor: #8892b0;
@@ -24,58 +22,32 @@
   min-height: 40px;
 }
   
+.projectsBar, .aboutBar, .experienceBar, .introBar, .socialsBar {
+  background: var(--backgroundColor);
+  color: var(--textColor);
+  font-family: "NTR Regular";
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  position: fixed;
+  transform: skewX(0deg);
+}
   .projectsBar {
     margin-top: calc(calc(100vh / 2) + 20px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
   }
 
   .aboutBar {
     margin-top: calc(calc(100vh / 2) - 35px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
   }
 
   .experienceBar {
     margin-top: calc(calc(100vh / 2) + 75px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
   }
   
   .introBar {
     margin-top: calc(calc(100vh / 2) - 90px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
   }
   .socialsBar {
     margin-top: calc(calc(100vh / 2) + 130px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
   }
 
 
@@ -90,98 +62,41 @@
     z-index: -1;
     transition: all 0.3s ease;
 }
+
+.aboutSelected, .projectsSelected, .experienceSelected, .introSelected {
+  background: var(--backgroundColor);
+  color: var(--textColor);
+  font-family: "NTR Regular";
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  position: fixed;
+  transform: skewX(0deg);
+}
 .aboutSelected {
     margin-top: calc(calc(100vh / 2) - 35px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
-  }
-
+}
+.introSelected {
+  margin-top: calc(calc(100vh / 2) - 90px);
+}
 .projectsSelected {
-    margin-top: calc(calc(100vh / 2) + 20px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
-  }
-  .aboutSelected::before {
-    content: attr(data-label);
-    background: var(--buttonColor);
-    display: grid;
-    place-items: center;
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    background-color: var(--selectedColor);
-    top: -7px;
-    right: -5px;
+  margin-top: calc(calc(100vh / 2) + 20px);
 }
-.projectsSelected::before {
-    content: attr(data-label);
-    background: var(--buttonColor);
-    display: grid;
-    place-items: center;
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    background-color: var(--selectedColor);
-    top: -7px;
-    right: -5px;
+.experienceSelected {
+  margin-top: calc(calc(100vh / 2) + 75px);
 }
 
-  .experienceSelected {
-    margin-top: calc(calc(100vh / 2) + 75px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
-  }
-.experienceSelected::before {
-    content: attr(data-label);
-    background: var(--buttonColor);
-    display: grid;
-    place-items: center;
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    background-color: var(--selectedColor);
-    top: -7px;
-    right: -5px;
-  }
-
-  .introSelected::before {
-    content: attr(data-label);
-    background: var(--buttonColor);
-    display: grid;
-    place-items: center;
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    background-color: var(--selectedColor);
-    top: -7px;
-    right: -5px;
-  }
-  .introSelected {
-    margin-top: calc(calc(100vh / 2) - 90px);
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
-  }
-
+.aboutSelected::before, .projectsSelected::before, .experienceSelected::before, .introSelected::before {
+  content: attr(data-label);
+  background: var(--buttonColor);
+  display: grid;
+  place-items: center;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  background-color: var(--selectedColor);
+  top: -7px;
+  right: -5px;
+}
 
 
 .socialsBar > a{
@@ -236,7 +151,6 @@
 
 .githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover{
   color: var(--textColor); 
-  
 }
 
 
