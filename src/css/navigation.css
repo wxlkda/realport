@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 
 :root {
-    --buttonColor: #F5EFE1;
+    --buttonColor: var(--cloudy-white ); 
+    --borderColor: #8892b0;
+    --textColor: #162e7a;
+    --backgroundColor: var(--dark-gray);
+    --ColorTester: #8892b0;
+    --selectedColor: #bfccf4;
 }
 
 .btn, .introBar, .introBar::before, .introSelected, .introSelected::before, .aboutSelected, .aboutSelected::before, .aboutBar, .aboutBar::before, .projectsSelected, .projectsSelected::before, .projectsBar::before, .projectsBar, .experienceBar::before, .experienceBar, .experienceSelected, .experienceSelected::before{
-    border: 2px solid #e2d0a8;
+    border: 2px solid var(--borderColor);
     border-radius: 10px;
     cursor: pointer;
     min-width: 100px;
     min-height: 40px;
   }
-  
+
 .socialsBar, .socialsBar::before {
-  border: 2px solid #e2d0a8;
+  border: 2px solid var(--borderColor);
   border-radius: 10px;
   min-width: 100px;
   min-height: 40px;
@@ -21,8 +26,8 @@
   
   .projectsBar {
     margin-top: calc(calc(100vh / 2) + 20px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -32,8 +37,8 @@
 
   .aboutBar {
     margin-top: calc(calc(100vh / 2) - 35px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -43,8 +48,8 @@
 
   .experienceBar {
     margin-top: calc(calc(100vh / 2) + 75px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -54,8 +59,8 @@
   
   .introBar {
     margin-top: calc(calc(100vh / 2) - 90px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -64,8 +69,8 @@
   }
   .socialsBar {
     margin-top: calc(calc(100vh / 2) + 130px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -87,8 +92,8 @@
 }
 .aboutSelected {
     margin-top: calc(calc(100vh / 2) - 35px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -98,8 +103,8 @@
 
 .projectsSelected {
     margin-top: calc(calc(100vh / 2) + 20px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -116,7 +121,7 @@
     right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
-    background-color: #f1e9d6;
+    background-color: var(--selectedColor);
     top: -5px;
     right: -5px;
 }
@@ -130,15 +135,15 @@
     right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
-    background-color: #f1e9d6;
+    background-color: var(--selectedColor);
     top: -5px;
     right: -5px;
 }
 
   .experienceSelected {
     margin-top: calc(calc(100vh / 2) + 75px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -155,7 +160,7 @@
     right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
-    background-color: #f1e9d6;
+    background-color: var(--selectedColor);
     top: -5px;
     right: -5px;
   }
@@ -170,14 +175,14 @@
     right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
-    background-color: #f1e9d6;
+    background-color: var(--selectedColor);
     top: -5px;
     right: -5px;
   }
   .introSelected {
     margin-top: calc(calc(100vh / 2) - 90px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--backgroundColor);
+    color: var(--textColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -188,14 +193,14 @@
 
 
 .socialsBar > a{
-    display: none;
+  display: none;
 }
 
 .socialsBar:hover > a {
   display: grid;
-    justify-content: center;
+  justify-content: center;
   align-items: center;
-    flex-direction: column;
+  flex-direction: column;
   grid-template-columns: repeat(3, minmax(8px, 9px));
 }
 
@@ -211,7 +216,7 @@
     right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
-    background-color: #f1e9d6;
+    background-color: var(--selectedColor);
     top: -5px;
     right: -5px;
 }
@@ -219,8 +224,8 @@
 
 .socialsBar:hover {
     margin-top: calc(calc(100vh / 2) + 130px);
-    background: #e2d0a8;
-    color: #7b6229;
+    background: var(--borderColor);
+    color: var(--backgroundColor);
     font-family: "NTR Regular";
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -232,16 +237,16 @@
 
 .linkedinIcon, .emailIcon {
   transform: scale(1);
-  color: #7b6229; 
+  color: var(--textColor); 
 }
 .githubIcon {
   transform: scale(1);
-  color: #7b6229;   
+  color: var(--textColor);   
 }
 
 .githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover{
-  color: #7b6229; 
-    
+  color: var(--textColor); 
+  
 }
 
 
