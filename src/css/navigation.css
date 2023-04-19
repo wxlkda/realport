@@ -117,12 +117,10 @@
     display: grid;
     place-items: center;
     position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
     background-color: var(--selectedColor);
-    top: -5px;
+    top: -7px;
     right: -5px;
 }
 .projectsSelected::before {
@@ -131,12 +129,10 @@
     display: grid;
     place-items: center;
     position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
     background-color: var(--selectedColor);
-    top: -5px;
+    top: -7px;
     right: -5px;
 }
 
@@ -156,12 +152,10 @@
     display: grid;
     place-items: center;
     position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
     background-color: var(--selectedColor);
-    top: -5px;
+    top: -7px;
     right: -5px;
   }
 
@@ -171,12 +165,10 @@
     display: grid;
     place-items: center;
     position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
     background-color: var(--selectedColor);
-    top: -5px;
+    top: -7px;
     right: -5px;
   }
   .introSelected {
@@ -212,12 +204,10 @@
     display: grid;
     place-items: center;
     position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
     z-index: -1;
     transition: all 0.3s ease;
     background-color: var(--selectedColor);
-    top: -5px;
+    top: -7px;
     right: -5px;
 }
 
