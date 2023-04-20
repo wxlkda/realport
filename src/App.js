@@ -63,14 +63,14 @@ function About() {
           <br></br>
           Below are some of the <b>technologies</b> that I am familiar with:
           <ul className="skills">
-            <li>HTML & CSS</li>
+            <li>HTML5 & CSS</li>
             <li>Javascript</li>
             <li>Python</li>
             <li>AWS</li>
             <li>React</li>
             <li>Java</li>
             <li>MongoDB</li>
-            <li>DevOps</li>
+            <li>Agile & DevOps</li>
           </ul>
           At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">Catan</span>. I also play online video games with my friends.
         </div>
