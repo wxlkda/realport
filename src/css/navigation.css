@@ -102,57 +102,62 @@
 .socialsBar > a{
   display: none;
 }
-
-.socialsBar:hover > a {
-  display: grid;
+.socialsBar:hover::before {
+  content: "";
+  background: var(--buttonColor);
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  grid-template-columns: repeat(3, minmax(8px, 10px));
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  background-color: var(--selectedColor);
+  top: -7px;
+  right: -5px;
+  width: 100%;
+  height: 100%;
 }
 
-
-
-.socialsBar:hover::before {
-    content: "";
-    background: var(--buttonColor);
-    display: grid;
-    place-items: center;
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    background-color: var(--selectedColor);
-    top: -7px;
-    right: -5px;
+.socialsBar:hover::before a {
+  color: var(--textColor);
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
+.socialsBar:hover .githubIcon,
+.socialsBar:hover .linkedinIcon,
+.socialsBar:hover .emailIcon {
+  color: var(--textColor);
+  margin: -8px 0px 0 7px;
+}
+
+.socialsBar:hover .githubIcon:hover,
+.socialsBar:hover .linkedinIcon:hover,
+.socialsBar:hover .emailIcon:hover {
+  color: #4060c9;
+}
 
 .socialsBar:hover {
-    margin-top: calc(calc(100vh / 2) + 130px);
-    background: var(--borderColor);
-    color: var(--backgroundColor);
-    font-family: "NTR Regular";
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    position: fixed;
-    transform: skewX(0deg);
-    display: flex;
+  margin-top: calc(calc(100vh / 2) + 130px);
+  background: var(--borderColor);
+  color: var(--backgroundColor);
+  font-family: "NTR Regular";
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  position: fixed;
+  transform: skewX(0deg);
+  display: flex;
+  justify-content: center;
 }
 
-
-.linkedinIcon, .emailIcon {
-  transform: scale(1);
-  color: var(--textColor); 
+.socialsBar:hover > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
 }
-.githubIcon {
-  transform: scale(1);
-  color: var(--textColor);   
-}
-
-.githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover{
-  color: var(--textColor); 
-}
-
 
   
 
