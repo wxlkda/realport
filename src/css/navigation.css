@@ -10,72 +10,55 @@
 #sideTabs {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: fixed;
+  margin-top: calc(50vh - 120px);
 }
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+
 
 .bar {
   font-family: "NTR Regular";
   font-size: 1.3rem;
-  letter-spacing: 0.5px;
-  border: 2px solid var(--borderColor);
+  letter-spacing: 0.1px;
   cursor: pointer;
-  min-width: 100px;
-  min-height: 40px;
+  min-width: 210px;
   padding-left: 20px;
   text-align: left;
+  position: relative;
+  overflow: hidden;
 }
+.s {
+  padding-left: 15px;
+}
+
 .projects, .about, .experience, .intro, .socials {
   color: var(--dark-gray);
 }
-
-.bar:nth-child(n) {
-  margin-top: calc(40px + (40px * (n - 1)));
-}
-
 
 .aboutSelected, .projectsSelected, .experienceSelected, .introSelected {
   color: var(--light-blue);
 }
 
 
-.socialsBar > a{
-  display: none;
-}
-.socialsBar:hover::before {
-  content: "";
-  background: var(--buttonColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: -1;
-  transition: all 0.3s ease;
-  background-color: var(--selectedColor);
-  top: -7px;
-  right: -5px;
-  width: 100%;
-  height: 100%;
+
+.githubIcon,
+.linkedinIcon,
+.emailIcon {
+  color: var(--light-blue);
+  margin: 0px 0px 0px 5px;
 }
 
-.socialsBar:hover::before a {
-  color: var(--textColor);
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.socialsBar:hover .githubIcon,
-.socialsBar:hover .linkedinIcon,
-.socialsBar:hover .emailIcon {
-  color: var(--textColor);
-  margin: -8px 0px 0 7px;
-}
-
-.socialsBar:hover .githubIcon:hover,
-.socialsBar:hover .linkedinIcon:hover,
-.socialsBar:hover .emailIcon:hover {
-  color: #4060c9;
+.githubIcon:hover,
+.linkedinIcon:hover,
+.emailIcon:hover {
+  color: var(--cloudy-white);
 }
 
 .socialsBar:hover {

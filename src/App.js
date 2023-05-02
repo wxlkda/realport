@@ -170,10 +170,11 @@ function Projects() {
 function Navigation() {
   let { activeLinkId } = useContext(NavContext);
   let tabs = ["intro", "about", "projects", "experience"]
+  let labels = ["Home", "About me", "Projects", "Experience"]
 
   const returnJSX = (content) => {
-    let finalThing = content.map((content, i) => 
-    <div key={i} className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}>{content}</div>
+    let finalThing = content.map((content, i) =>
+    <span key={i} className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}>{labels[i]}</span>
     );
     return finalThing;
   }
@@ -194,7 +195,7 @@ function Navigation() {
   return ( 
     <div id = "sideTabs">
       {returnJSX(tabs)}
-      <div className = "socialsBar" data-label="socials">
+      <div className = "socials bar s" data-label="socials">
        <a href="https://github.com/wxlkda" className="githubIcon" target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
         </a>
