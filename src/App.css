@@ -7,17 +7,14 @@
   --highlight-color: #112b52; /*self-explanatory*/
 }
 
+::selection {
+  background: var(--highlight-color);
+}
+
 .App {
   display: grid;
   
 }
-
-
-
-
-
-
-
 
 
 @font-face {
@@ -27,11 +24,23 @@
   src: local('NTR Regular'), url('./Font/NTR-Regular.ttf') format('truetype');
 }
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 .special {
   font-family: "NTR Regular";
   color: var(--light-blue);
 }
-
 
 
 .sentence {
@@ -74,7 +83,3 @@
   margin-bottom: 10px;
 }
 
-
-::selection {
-  background: var(--highlight-color);
-}

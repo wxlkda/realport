@@ -16,6 +16,29 @@ import EmailIcon from '@mui/icons-material/Email';
 
 
 
+const FadeInSection = ({children,}) => {
+  const domRef = React.useRef();
+  const [isVisible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {  
+      if (entries[0].isIntersecting) {
+        setVisible(true);
+        observer.unobserve(domRef.current);
+      }
+    });
+    
+    observer.observe(domRef.current);
+    
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className={`fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={domRef}>
+      {children}
+    </div>
+  );
+};
 
 function Intro() {
   const introRef = useNav("intro");
@@ -28,14 +51,15 @@ function Intro() {
             .
           </span>
         </div>
-        <div className="intro-rt">
-          Making something innovative.
-        </div>
+          <div className="intro-rt">
+            Making something innovative.
+          </div>
+        
         <span className="intro-inspirational">
         Some inspiring text here that will inspire here single person that reads this message. Some inspiring text here that will inspire here single person that reads this message.   
         </span>
-        <br></br>
         
+        <br></br>
         <a className="messageBox" href="mailto:alwalid23dec@gmail.com?subject=Hello!" rel="noopener noreferrer">
           <span className="messageBoxText">
           
@@ -62,16 +86,18 @@ function About() {
           <br></br>
           <br></br>
           Below are some of the <b>technologies</b> that I am familiar with:
-          <ul className="skills">
-            <li>HTML5 & CSS</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>AWS</li>
-            <li>React</li>
-            <li>Java</li>
-            <li>MongoDB</li>
-            <li>Agile & DevOps</li>
-          </ul>
+          <FadeInSection>
+            <ul className="skills">
+              <li>HTML  5 & CSS</li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>AWS</li>
+              <li>React</li>
+              <li>Java</li>
+              <li>MongoDB</li>
+              <li>Agile & DevOps</li>
+            </ul>
+          </FadeInSection>
           At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">Catan</span>. I also play online video games with my friends.
         </div>
         <div className="about-image">
@@ -143,11 +169,11 @@ function Projects() {
 
 function Navigation() {
   let { activeLinkId } = useContext(NavContext);
-  let tabs = ["intro", "about", "experience", "projects"]
+  let tabs = ["intro", "about", "projects", "experience"]
 
   const returnJSX = (content) => {
     let finalThing = content.map((content) => 
-    <div className = {activeLinkId === content ? `${content}Selected` : `${content}Bar` } data-label = {content} onClick = {handleClickNav}></div>
+    <div className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}>{content}</div>
     );
     return finalThing;
   }
@@ -185,10 +211,17 @@ export default function App() {
   return (
     <div className="App">
         <div id="content">
+        <FadeInSection>
           <Intro></Intro>
+        </FadeInSection>
+        <FadeInSection>
           <About></About>
-          <Projects></Projects>
+        </FadeInSection>
+        <Projects></Projects>
+        <FadeInSection>
           <Experience></Experience>
+        </FadeInSection>
+          
           <div className="footer">
             <center className="footer-text">
               Made and designed by Alwalid Khan.

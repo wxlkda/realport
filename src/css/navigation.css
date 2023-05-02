@@ -7,96 +7,37 @@
     --selectedColor: #bfccf4;
 }
 
-.btn, .introBar, .introBar::before, .introSelected, .introSelected::before, .aboutSelected, .aboutSelected::before, .aboutBar, .aboutBar::before, .projectsSelected, .projectsSelected::before, .projectsBar::before, .projectsBar, .experienceBar::before, .experienceBar, .experienceSelected, .experienceSelected::before{
-    border: 2px solid var(--borderColor);
-    border-radius: 10px;
-    cursor: pointer;
-    min-width: 100px;
-    min-height: 40px;
-  }
+#sideTabs {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+}
 
-.socialsBar, .socialsBar::before {
+.bar {
+  font-family: "NTR Regular";
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
   border: 2px solid var(--borderColor);
-  border-radius: 10px;
+  cursor: pointer;
   min-width: 100px;
   min-height: 40px;
+  padding-left: 20px;
+  text-align: left;
 }
-  
-.projectsBar, .aboutBar, .experienceBar, .introBar, .socialsBar {
-  background: var(--backgroundColor);
-  color: var(--textColor);
-  font-family: "NTR Regular";
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-  position: fixed;
-  transform: skewX(0deg);
+.projects, .about, .experience, .intro, .socials {
+  color: var(--dark-gray);
 }
-  .projectsBar {
-    margin-top: calc(calc(100vh / 2) + 20px);
-  }
 
-  .aboutBar {
-    margin-top: calc(calc(100vh / 2) - 35px);
-  }
-
-  .experienceBar {
-    margin-top: calc(calc(100vh / 2) + 75px);
-  }
-  
-  .introBar {
-    margin-top: calc(calc(100vh / 2) - 90px);
-  }
-  .socialsBar {
-    margin-top: calc(calc(100vh / 2) + 130px);
-  }
-
-
-.projectsBar::before, .experienceBar::before, .aboutBar::before, .introBar::before, .socialsBar::before {
-    content: attr(data-label);
-    background: var(--buttonColor);
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: -0.7rem;
-    right: -0.7rem;
-    z-index: -1;
-    transition: all 0.3s ease;
+.bar:nth-child(n) {
+  margin-top: calc(40px + (40px * (n - 1)));
 }
+
 
 .aboutSelected, .projectsSelected, .experienceSelected, .introSelected {
-  background: var(--backgroundColor);
-  color: var(--textColor);
-  font-family: "NTR Regular";
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-  position: fixed;
-  transform: skewX(0deg);
-}
-.aboutSelected {
-    margin-top: calc(calc(100vh / 2) - 35px);
-}
-.introSelected {
-  margin-top: calc(calc(100vh / 2) - 90px);
-}
-.projectsSelected {
-  margin-top: calc(calc(100vh / 2) + 20px);
-}
-.experienceSelected {
-  margin-top: calc(calc(100vh / 2) + 75px);
+  color: var(--light-blue);
 }
 
-.aboutSelected::before, .projectsSelected::before, .experienceSelected::before, .introSelected::before {
-  content: attr(data-label);
-  background: var(--buttonColor);
-  display: grid;
-  place-items: center;
-  position: absolute;
-  z-index: -1;
-  transition: all 0.3s ease;
-  background-color: var(--selectedColor);
-  top: -7px;
-  right: -5px;
-}
 
 
 .socialsBar > a{
@@ -162,9 +103,6 @@
   
 
 
-#sideTabs {
-    position: fixed;
-}
 
 @media only screen and (max-width: 800px) {
     #sideTabs {
