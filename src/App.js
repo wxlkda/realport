@@ -5,8 +5,7 @@ import './css/navigation.css';
 import './css/experience.css';
 import './css/projects.css';
 
-import React from 'react';
-import { useContext } from 'react';
+import React, { useRef, useContext } from "react";
 import useNav from "./hooks/useNav";
 import { NavContext } from './context/NavContext'
 
@@ -17,7 +16,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 
 const FadeInSection = ({children,}) => {
-  const domRef = React.useRef();
+  const domRef = useRef();
   const [isVisible, setVisible] = React.useState(false);
 
   React.useEffect(() => {
@@ -171,8 +170,8 @@ function Navigation() {
   let { activeLinkId } = useContext(NavContext);
   let tabs = ["intro", "about", "projects", "experience"]
   let labels = ["Home", "About me", "Projects", "Experience"]
-
   const returnJSX = (content) => {
+    
     let finalThing = content.map((content, i) =>
     <span key={i} className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}>{labels[i]}</span>
     );
