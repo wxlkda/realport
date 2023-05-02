@@ -172,15 +172,21 @@ function Navigation() {
   let tabs = ["intro", "about", "projects", "experience"]
 
   const returnJSX = (content) => {
-    let finalThing = content.map((content) => 
-    <div className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}>{content}</div>
+    let finalThing = content.map((content, i) => 
+    <div key={i} className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}>{content}</div>
     );
     return finalThing;
   }
 
   const handleClickNav = (e) => {
     const class_name = e.target.className;
-    document.getElementById(class_name.substring(0,class_name.length - 3)).scrollIntoView({ behavior: "smooth", easing: "linear" });
+    try {
+      document.getElementById(class_name.substring(0,class_name.length - 4)).scrollIntoView({ behavior: "smooth", easing: "linear" });
+    } catch (error) {
+      if (!(error instanceof TypeError)) {
+        throw error;
+      }
+    }
     
   }
 
