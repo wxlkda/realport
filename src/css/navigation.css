@@ -46,6 +46,20 @@
   color: var(--light-blue);
 }
 
+.projectsSelected::after,
+.aboutSelected::after,
+.experienceSelected::after,
+.introSelected::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: var(--light-blue);
+  transition: width 0.2s ease-in-out;
+}
+
 
 
 .githubIcon,
