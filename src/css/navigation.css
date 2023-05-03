@@ -35,7 +35,7 @@
   overflow: hidden;
 }
 .s {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .projects, .about, .experience, .intro, .socials {
@@ -66,7 +66,7 @@
 .linkedinIcon,
 .emailIcon {
   color: var(--light-blue);
-  margin: 0px 0px 0px 5px;
+  margin: 0px 0px 0px 8px;
 }
 
 .githubIcon:hover,

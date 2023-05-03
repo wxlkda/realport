@@ -16,6 +16,7 @@
     font-family: "NTR Regular";
 }
 
+
 .intro-name {
     font-family: "NTR Regular";
     color: var(--light-blue);
@@ -61,12 +62,15 @@
 }
 
 .messageBox {
+    display: inline-block;
+    white-space: nowrap;
     border-radius: 4px;
     padding: 10px 30px;
     border: 1px solid var(--light-blue);
     font-size: 22px;
     font-weight: bolder;
     text-decoration: none;
+    align-content: center;
 }
 
 
