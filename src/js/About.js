@@ -18,7 +18,6 @@ function About() {
             <br></br>
             <br></br>
             Below are some of the <b>technologies</b> that I am familiar with:
-            <FadeInSection>
               <ul className="skills">
                 <li>HTML5 & CSS</li>
                 <li>Javascript</li>
@@ -29,7 +28,6 @@ function About() {
                 <li>MongoDB</li>
                 <li>Agile & DevOps</li>
               </ul>
-            </FadeInSection>
             At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">Catan</span>. I also play online video games with my friends.
           </div>
           <div className="about-image">
