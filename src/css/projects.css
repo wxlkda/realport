@@ -1,13 +1,14 @@
 #projects {
-    padding-left: 15%;
-    padding-right: 25%;
-    min-height: 100vh;
-  }
+    margin-top: 50px;
+    margin-left: 15%;
+    min-width: 15vw;
+}
   
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-gap: 10px;
+    max-width: 50vw;
   }
   @media (max-width: 1080px) {
     .projects-grid {
@@ -39,10 +40,6 @@
   }
   .folder-icon {
     color: var(--light-blue);
-  }
-  
-  .github-icon {
-    margin-top: 6px;
   }
   .github-icon:hover {
     color: var(--light-blue);

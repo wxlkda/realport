@@ -46,7 +46,7 @@ function Projects() {
           <span className="title">
             <b>/software-innovations</b>
           </span>
-          <div className="project-container">
+        <div className="project-container">
             <ul className="projects-grid">
                 {Object.keys(projectsList).map((key, i) => (
                 <FadeInSection delay={`${i + 1}00ms`} key={i}>
@@ -66,7 +66,7 @@ function Projects() {
                 ))}
             </ul>
         </div>
-        </div>
+    </div>
     );
   };
 
