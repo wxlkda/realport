@@ -100,7 +100,7 @@ color: var(--light-blue);
         font-size: 45px;
     }
     body .intro-rt {
-        line-height: 0.8;
+        line-height: 1.2;
         right: -50%;
         margin-top: -20px;
         font-size: 28px;
