@@ -54,7 +54,7 @@ function Projects() {
                     <li className="projects-card">
                         <div className="card-header">
                             <div className="folder-icon">
-                                <FolderOpenRoundedIcon style={{ fontSize: 40 }}></FolderOpenRoundedIcon>
+                                <FolderOpenRoundedIcon style={{ fontSize: 35 }}></FolderOpenRoundedIcon>
                             </div>
                             <span className="external-links">
                                 <a className="github-icon" href={projectsList[key]["link"]} rel="noopener noreferrer" target="_blank">
