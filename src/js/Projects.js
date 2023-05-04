@@ -15,7 +15,7 @@ function Projects() {
     const projectsList = {
         "Data Visualizer": {
           desc:
-            "A static website used to visualize different algorithms, ranging from sorting algorithms to graph traversal algorithms.",
+            "A website used to visualize numerous algorithms on arrays, graphs, and trees. Created to highlight my knowledge of data structures and algorithms.",
           techStack: "HTML / CSS, Javascript",
           link: "https://github.com/wxlkda/datavis",
           open: "https://alwalidkhan.com"
