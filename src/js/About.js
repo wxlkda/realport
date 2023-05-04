@@ -1,7 +1,6 @@
 import '../css/about.css';
 
 import useNav from "../hooks/useNav";
-import FadeInSection from "./FadeInSection.js";
 
 function About() {
     const aboutRef = useNav("about");

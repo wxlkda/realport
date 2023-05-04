@@ -21,7 +21,7 @@ function Intro() {
             </div>
             
             <div className="intro-inspirational">
-            Future software engineer, committed to creating impactful software as well as my passion for gaming fuel my creativity and drive, as I work towards engineering innovative solutions for a better tomorrow.
+            Future software engineer that is dedicated to developing impactful software. My passion for gaming fuels my creativity and drive, motivating me to engineer innovative solutions for a brighter future.
             </div>
             <br></br>
   
