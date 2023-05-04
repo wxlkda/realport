@@ -22,21 +22,21 @@ function Projects() {
         },
         "Takumi A.I.": {
           desc:
-          "A 2D runner game featuring a NEAT (NeuroEvolution of Augmenting Topologies) algorithm to train simulations.",
+          "A 2D runner game made in PyGame, where the goal is to survive the longest against obstacles. Features a NEAT (NeuroEvolution of Augmenting Topologies) algorithm to train simulations.",
           techStack: "Python",
           link: "https://github.com/wxlkda/TakumiAI",
           open: ""
         },
         "Proj. 3": {
           desc:
-          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.",
+          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.All placeholders must be same line length else everything breaks.",
           techStack: "Nothing",
           link: "https://google.ca",
           open: ""
         },
         "Proj. 4": {
           desc:
-          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.",
+          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.All placeholders must be same line length else everything breaks.",
           techStack: "Nothing",
           link: "https://google.ca",
           open: ""
