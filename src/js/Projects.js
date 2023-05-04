@@ -1,8 +1,9 @@
 import '../css/projects.css';
 
 import FolderOpenRoundedIcon from '@mui/icons-material/FolderOpenRounded';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
-import ExternalLinks from './ExternalLink';
 import FadeInSection from './FadeInSection';
 import useNav from "../hooks/useNav";
 
@@ -12,38 +13,38 @@ function Projects() {
   
     const projectsRef = useNav("projects");
     const projectsList = {
-        "Proj 1": {
+        "Data Visualizer": {
           desc:
-            "A placeholder for one of the projects I created. This placeholder must be two lines else everything breaks.",
-          techStack: "Samp tech stack",
-          link: "https://google.ca",
-          open: "https://google.ca"
+            "A static website used to visualize different algorithms, ranging from sorting algorithms to graph traversal algorithms.",
+          techStack: "HTML / CSS, Javascript",
+          link: "https://github.com/wxlkda/datavis",
+          open: "https://alwalidkhan.com"
         },
-        "Proj. 2": {
+        "Takumi A.I.": {
           desc:
-          "A placeholder for one of the projects I created. This placeholder must be two lines else everything breaks.",
-          techStack: "Javascript, HTML / CSS",
-          link: "https://google.ca",
-          open: "https://google.ca"
+          "A 2D runner game featuring a NEAT (NeuroEvolution of Augmenting Topologies) algorithm to train simulations.",
+          techStack: "Python",
+          link: "https://github.com/wxlkda/TakumiAI",
+          open: ""
         },
         "Proj. 3": {
           desc:
-          "A placeholder for one of the projects I created. This placeholder must be two lines else everything breaks.",
-          techStack: "Javascript, HTML / CSS",
+          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.",
+          techStack: "Nothing",
           link: "https://google.ca",
           open: "https://google.ca"
         },
         "Proj. 4": {
           desc:
-          "A placeholder for one of the projects I created. This placeholder must be two lines else everything breaks.",
-          techStack: "Javascript, HTML / CSS",
+          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.",
+          techStack: "Nothing",
           link: "https://google.ca",
           open: "https://google.ca"
         }
       };
     return (
       <div ref = {projectsRef} id="projects">
-          <span className="title">
+          <span className="projects-title">
             <b>/software-innovations</b>
           </span>
         <div className="project-container">
@@ -53,9 +54,18 @@ function Projects() {
                     <li className="projects-card">
                         <div className="card-header">
                             <div className="folder-icon">
-                                <FolderOpenRoundedIcon tyle={{ fontSize: 35 }}></FolderOpenRoundedIcon>
+                                <FolderOpenRoundedIcon style={{ fontSize: 40 }}></FolderOpenRoundedIcon>
                             </div>
-                            <ExternalLinks githubLink={projectsList[key]["link"]} openLink={projectsList[key]["open"]} ></ExternalLinks>
+                            <span className="external-links">
+                                <a className="github-icon" href={projectsList[key]["link"]} rel="noopener noreferrer" target="_blank">
+                                    <GitHubIcon style = {{fontSize: 23}}></GitHubIcon>
+                                </a>
+                                {projectsList[key]["open"] && (
+                                  <a className="open-icon" href={projectsList[key]["open"]} rel="noopener noreferrer" target="_blank">
+                                  <OpenInBrowserIcon style = {{fontSize: 25}}></OpenInBrowserIcon>
+                              </a>
+                                )}
+                            </span>
                         </div>
 
                         <div className="card-title">{key}</div>

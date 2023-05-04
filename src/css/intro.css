@@ -90,36 +90,31 @@ color: var(--light-blue);
 
 @media only screen and (max-width: 600px) {
     body .intro-sentence {
-        font-size: 50px;
+        font-size: 45px;
         margin: 0;
-        margin-left: 10vw;
-        text-align: center;
-        max-width: 80vw;
+        max-width: 90vw;
         margin-right: 60px;
-        text-align: center;
+        text-align: left;
       }
     body .intro-name {
-        font-size: 50px;
-        margin: 0;
-        text-align: center;
+        font-size: 45px;
     }
     body .intro-rt {
-        margin: 0;
-        margin-top: -50px;
-        font-size: 30px;
-        justify-content: center;
-        text-align: center;
+        line-height: 0.8;
+        right: -50%;
+        margin-top: -20px;
+        font-size: 28px;
+        text-align: left;
+        max-width: 400px;
     }
 
-        
-
     .intro-inspirational {
+        margin-top: 10px;
         font-size: 18px;
-        text-align: center;
     }
     .messageBox {
         font-size: 16px;
-        margin-left: 25vw;  
+        justify-content: center;
     }
 }
 
@@ -141,8 +136,6 @@ color: var(--light-blue);
         margin: 0;
         margin-top: -60px;
         font-size: 40px;
-        justify-content: center;
-        text-align: center;
       }
 }
 
@@ -152,6 +145,7 @@ color: var(--light-blue);
         height: unset;
         padding-left: unset;
         padding-right: unset;
+        display: flex;
       
     }
       .intro-inspirational {

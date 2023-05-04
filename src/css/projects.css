@@ -4,80 +4,95 @@
     min-width: 15vw;
 }
   
+.projects-title {
+  font-size: 50px;
+  color: var(--cloudy-white);
+  font-family: "NTR Regular";
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 10px;
+  max-width: 60vw;
+}
+@media (max-width: 1080px) {
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-gap: 10px;
-    max-width: 50vw;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  @media (max-width: 1080px) {
-    .projects-grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-  }
-  
-  .projects-card {
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1.75rem;
-    background-color: #112240;
-    border-radius: 16px;
-  }
-  
-  .projects-card:hover {
-    transform: translateY(-7px);
-    background-color: #233554;
-  }
-  
-  .card-header {
-    margin-top: -20px;
-    display: flex;
-    padding: 1.25em 0 !important;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: none !important;
-  }
-  .folder-icon {
-    color: var(--light-blue);
-  }
+}
 
-  .github-icon {
-    margin-top: 30px;
+.projects-card {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.75rem;
+  background-color: #112240;
+  border-radius: 16px;
+}
+
+.projects-card:hover {
+  transform: translateY(-7px);
+  background-color: #233554;
+}
+
+.card-header {
+  margin-top: -20px;
+  display: flex;
+  padding: 1.25em 0 !important;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: none !important;
+}
+.folder-icon {
+  color: var(--light-blue);
+}
+
+.github-icon {
+  margin-top: 30px;
+  color: var(--cloudy-white);
+}
+.github-icon:hover {
+  color: var(--light-blue);
+}
+
+.open-icon {
+  margin-left: 3px;
+  transform: scale(1.5);
+  color: var(--cloudy-white);
+}
+
+.open-icon:hover {
+  color: var(--light-blue);
+}
+
+.card-title {
+  font-family: "NTR Regular";
+  color: var(--cloudy-white);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-desc {
+  line-height: 1.5;
+  font-family: "NTR Regular";
+  color: var(--dark-gray);
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.card-tech {
+  font-family: "NTR Regular";
+  color: var(--dark-gray);
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
   }
-  .github-icon:hover {
-    color: black;
-  }
-  
-  .open-icon {
-    margin-left: 3px;
-  }
-  
-  .card-title {
-    font-family: "NTR Regular";
-    color: var(--cloudy-white);
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .card-desc {
-    font-family: "NTR Regular";
-    color: var(--dark-gray);
-    font-size: 18px;
-    padding-bottom: 40px;
-  }
-  
-  .card-tech {
-    font-family: "NTR Regular";
-    color: var(--dark-gray);
-    font-size: 16px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    #projects {
-      height: unset;
-      padding-left: unset;
-      padding-right: unset;
-    }
-  }
-  
+  .projects-title {
+    font-size: 38px;
+}
+}
