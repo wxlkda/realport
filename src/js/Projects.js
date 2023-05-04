@@ -29,17 +29,17 @@ function Projects() {
         },
         "Proj. 3": {
           desc:
-          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks. A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.",
+          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.",
           techStack: "Nothing",
           link: "https://google.ca",
-          open: "https://google.ca"
+          open: ""
         },
         "Proj. 4": {
           desc:
           "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.",
           techStack: "Nothing",
           link: "https://google.ca",
-          open: "https://google.ca"
+          open: ""
         }
       };
     return (
