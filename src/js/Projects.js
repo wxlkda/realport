@@ -22,7 +22,7 @@ function Projects() {
         },
         "Takumi A.I.": {
           desc:
-          "A 2D runner game made in PyGame, where the goal is to survive the longest against obstacles. Features a NEAT (NeuroEvolution of Augmenting Topologies) algorithm to train simulations.",
+          "A 2D runner game made in PyGame, where the goal is to survive the longest against obstacles. Features a NEAT (NeuroEvolution of Augmenting Topologies) algorithm",
           techStack: "Python",
           link: "https://github.com/wxlkda/TakumiAI",
           open: ""
