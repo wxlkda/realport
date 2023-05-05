@@ -8,14 +8,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 
 
+
 function Navigation() {
     let { activeLinkId } = useContext(NavContext);
     let tabs = ["intro", "about", "projects", "experience"]
     let labels = ["Home", "About me", "Projects", "Experience"]
+
     const returnJSX = (content) => {
       
       let finalThing = content.map((content, i) =>
-      <span key={i} className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}>{labels[i]}</span>
+      <span key={i} className = {activeLinkId === content ? `${content}Selected bar` : `${content} bar` } data-label = {content} onClick = {handleClickNav}> {labels[i]}</span>
       );
       return finalThing;
     }

@@ -15,13 +15,11 @@ export default function App() {
   return (
     <div className="App">
         <div id="content">
-        <Intro></Intro>
+        <Intro/>
+        <About/>
+        <Projects/>
         <FadeInSection>
-          <About></About>
-        </FadeInSection>
-        <Projects></Projects>
-        <FadeInSection>
-          <Experience></Experience>
+          <Experience/>
         </FadeInSection>
           
           <div className="footer">

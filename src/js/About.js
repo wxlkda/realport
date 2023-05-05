@@ -2,6 +2,9 @@ import '../css/about.css';
 
 import useNav from "../hooks/useNav";
 
+import Dodecahedron from './Dodecahedron';
+import { Canvas } from '@react-three/fiber';
+
 function About() {
     const aboutRef = useNav("about");
     const me = require('../images/me.png');
@@ -29,9 +32,11 @@ function About() {
               </ul>
             At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">Catan</span>. I also play online video games with my friends.
           </div>
-          <div className="about-image">
-            <img src={me} height="300" width="300" alt="me"></img>
-          </div>
+          <Canvas style={{ width: '600px', height: '500px', marginTop: "-40px"}} camera={{ position: [0, 0, 10], fov: 75 }}>
+            <ambientLight />
+            <spotLight color="black" position={[0, 10, 0]} intensity={0.3} angle={Math.PI / 2} penumbra={0.9} castShadow shadowBias={-0.001} />
+            <Dodecahedron/>
+          </Canvas>
         </div>
       </div>
     );

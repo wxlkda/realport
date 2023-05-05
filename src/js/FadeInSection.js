@@ -1,8 +1,9 @@
-import React, {useState, useRef, useEffect} from "react";
+import React, { useState, useRef, useEffect } from "react";
 
-export default function FadeInSection(props) {
+const FadeInSection = (props) => {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
+
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -11,9 +12,18 @@ export default function FadeInSection(props) {
         }
       });
     });
-    observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
+
+    if (domRef.current) {
+      observer.observe(domRef.current);
+    }
+
+    return () => {
+      if (domRef.current) {
+        observer.unobserve(domRef.current);
+      }
+    };
   }, []);
+
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
@@ -23,4 +33,6 @@ export default function FadeInSection(props) {
       {props.children}
     </div>
   );
-}
+};
+
+export default FadeInSection;
