@@ -18,6 +18,9 @@
     flex-direction: row;
 }
 
+canvas {
+  display: flex;
+}
 .about-info ul {
     font-family: "NTR Regular";
     list-style-type: none;
@@ -81,6 +84,11 @@ left: 0;
     }
   }
 
+@media only screen and (max-width: 1000px){
+  .decaArt {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 600px) {
     #about {
@@ -107,9 +115,6 @@ left: 0;
       font-size: 17px;
       font-family: "NTR Regular";
       
-    }
-    .about-image img {
-      display: none;
     }
 
   
