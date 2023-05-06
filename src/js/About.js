@@ -31,7 +31,7 @@ function About() {
               </ul>
             At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">Catan</span>. I also play online video games with my friends.
           </div>
-          <Canvas className = "decaArt" style={{ width: '600px', height: '500px', marginTop: "-40px"}} camera={{ position: [0, 0, 10], fov: 75 }}>
+          <Canvas className = "decaArt" style={{ width: '400px', height: '400px'}} camera={{ position: [0, 0, 10], fov: 75 }}>
             <ambientLight />
             <spotLight color="black" position={[0, 10, 0]} intensity={0.3} angle={Math.PI / 2} penumbra={0.9} castShadow shadowBias={-0.001} />
             <Dodecahedron/>
