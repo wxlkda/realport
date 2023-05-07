@@ -25,9 +25,6 @@ const Dodecahedron = () => {
     <mesh ref={dodecahedronRef} onWheel={handleWheel}>
       <dodecahedronGeometry args={[radius]} />
       <meshNormalMaterial />
-      <Text position={[0, 0, 0]} fontSize={1} color="black">
-        Face 1
-      </Text>
       {/* ... */}
     </mesh>
   );
