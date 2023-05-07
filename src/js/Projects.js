@@ -30,7 +30,7 @@ function Projects() {
         "Athena": {
           desc:
           "A placeholder for one of my future projects. I am still working on this project rn.",
-          techStack: "CUDA, C++, HTML & CSS, OpenCL, Python",
+          techStack: "HTML & CSS. Javascript, C++, Python, Keras, TensorFlow]",
           link: "https://google.ca",
           open: ""
         }
