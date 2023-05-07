@@ -27,17 +27,10 @@ function Projects() {
           link: "https://github.com/wxlkda/TakumiAI",
           open: ""
         },
-        "Proj. 3": {
+        "Athena": {
           desc:
-          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.All placeholders must be same line length else everything breaks.",
-          techStack: "Nothing",
-          link: "https://google.ca",
-          open: ""
-        },
-        "Proj. 4": {
-          desc:
-          "A placeholder for one of the projects I created. All placeholders must be same line length else everything breaks.All placeholders must be same line length else everything breaks.",
-          techStack: "Nothing",
+          "A placeholder for one of my future projects. I am still working on this project rn. You can prob tell what it is based on the tech stack.",
+          techStack: "CUDA, C++, HTML & CSS, OpenCL, Python",
           link: "https://google.ca",
           open: ""
         }
