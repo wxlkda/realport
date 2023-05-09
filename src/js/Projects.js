@@ -18,7 +18,7 @@ function Projects() {
             "A website used to visualize numerous algorithms on arrays, graphs, and trees. Created to highlight my knowledge of data structures and algorithms.",
           techStack: "HTML / CSS, Javascript",
           link: "https://github.com/wxlkda/datavis",
-          open: "https://alwalidkhan.com"
+          open: "https://data.alwalidkhan.com/"
         },
         "Takumi A.I.": {
           desc:
