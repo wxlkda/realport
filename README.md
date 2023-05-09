@@ -4,7 +4,7 @@
 Hi! I am currently working on my portfolio as of right now. If you managed to see this, it means I made the repo public, nice :D. Currently, here is a snapshot of my portfolio:
 
 <p align="center">
-  <img src="https://i.ibb.co/NLvMfVT/image.png">
+  <img src="https://i.ibb.co/56ns55K/re.png">
 </p>
 
 Below are some links and colors I used on my site:
@@ -19,19 +19,15 @@ Below are some links and colors I used on my site:
 | `Special Text/Icon Colors` | `#61DAFB`  |
 | `Button Colors`            | `#E2D0A8`  |
 
-## Assets
-
-Insert Assets Here
 
 ## Future Plans
 
 Below is a list of projects that I have completed or I plan to work on in the future to further enhance my knowledge:
 
-- [X] Finish this site [Deployed on alwalidkhan.com, not finished yet]
-- [X] Add some small projects (1 or 2) [Just need to add them on site and push to github]
-- [ ] Focus on DSA and Leetcode Grinding
-- [X] Daily Leetcode (start off easy, go medium as I get better, then harder) [Started as off Feb 3, 2023]
-- [ ] Add more projects that focuses on System Design, AWS/Google Cloud, and ML
+- [X] Finish this site 
+- [X] Add some small projects (1 or 2)
+- [X] Focus on DSA and Leetcode Grinding
+- [X] Daily Leetcode (start off easy, go medium as I get better, then harder)
 - [ ] Get a SWE Internship at a good company :D
 
 <!---
