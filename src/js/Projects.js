@@ -29,7 +29,7 @@ function Projects() {
         },
         "Verve": {
           desc:
-          "A dynamic social networking app, created to enable sharing of personalized content and fostered for interactive experiences. Allows users to build conversations and share their experiences.",
+          "A dynamic social networking app, created to enable sharing of personalized content and fostered for interactive experiences. Allows users to build conversations",
           techStack: "Express.js, MongoDB, Node.js, React.js",
           link: "",
           open: ""
@@ -37,7 +37,7 @@ function Projects() {
         "Equinox": {
           desc:
           "A discord bot made during the COVID-19 pandemic using Python. Serves as a moderation bot, with the intention to help keep servers secure from bots/raiders hosted on a Heroku Server",
-          techStack: "Python, SQLite, SQL, Pillow",
+          techStack: "Python, SQLite, SQL, Pillow, Discord.py",
           link: "",
           open: ""
         }
