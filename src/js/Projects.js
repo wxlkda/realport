@@ -45,7 +45,7 @@ function Projects() {
     return (
       <div ref = {projectsRef} id="projects">
           <span className="projects-title">
-            <b>/software-innovations</b>
+            <b>/projects</b>
           </span>
         <div className="project-container">
             <ul className="projects-grid">
