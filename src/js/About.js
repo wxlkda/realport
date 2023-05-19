@@ -29,7 +29,11 @@ function About() {
                 <li>MongoDB</li>
                 <li>Agile & DevOps</li>
               </ul>
-            At home, I enjoy playing board games such as <span className="special">chess</span> and <span className="special">Catan</span>. I also play online video games with my friends.
+            At home, I enjoy playing board games such as <span className="special">chess</span> to ease my mind.
+            <br></br>
+            <br></br>
+            Feel free to reach out to me via gmail at <span className="special"><b><a href="mailto:alwalid23dec@gmail.com" target="_blank" rel="noopener noreferrer" className="special isLinked"> alwalid23dec@gmail.com</a></b></span> to have a chat
+            or discuss anything career/technology related.
           </div>
           <Canvas className = "decaArt" style={{ width: '400px', height: '400px'}} camera={{ position: [0, 0, 10], fov: 75 }}>
             <ambientLight />
