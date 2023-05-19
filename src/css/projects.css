@@ -80,6 +80,7 @@
   color: var(--dark-gray);
   font-size: 18px;
   padding-bottom: 40px;
+  text-align: justify;
 }
 
 .card-tech {
