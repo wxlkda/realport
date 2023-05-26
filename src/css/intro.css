@@ -4,9 +4,22 @@
     align-items: flex-start;
     margin-left: 15%;
     padding-top: 19%;
-    min-width: 15vw;
-    
+    min-width: 15vw;   
 }
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.Typewriter__cursor {
+    color: #61dafb;
+    font-weight: bold;
+    animation: blink 2s infinite;
+}
+
+
 .intro-sentence {
     font-size: 85px;
     text-align: justify;
@@ -15,7 +28,6 @@
     color: var(--cloudy-white);
     font-family: "NTR Regular";
 }
-
 
 .intro-name {
     font-family: "NTR Regular";
