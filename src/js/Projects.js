@@ -15,28 +15,28 @@ function Projects() {
     const projectsList = {
         "Data Visualizer": {
           desc:
-          "A website used to visualize numerous algorithms on arrays, graphs, and binary trees. Created to highlight my knowledge of data structures and algorithms.",
+          "A website used to visualize numerous algorithms on arrays, graphs, and binary trees.",
           techStack: "HTML / CSS, Javascript",
           link: "https://github.com/wxlkda/datavis",
           open: "https://data.alwalidkhan.com/"
         },
         "Takumi A.I.": {
           desc:
-          "A 2D runner game made in PyGame, where the goal is to survive the longest against obstacles. Features a Neuroevolution of Augmenting Topologies algorithm.",
-          techStack: "Python",
+          "A 2D runner game made in PyGame, featuring a NEAT algorithm to run multiple generations of AI stimulations.",
+          techStack: "Python, PyGame",
           link: "https://github.com/wxlkda/TakumiAI",
           open: ""
         },
         "Verve": {
           desc:
-          "A dynamic social networking app, created to enable sharing of personalized content and fostered for interactive experiences. Allows users to build conversations",
+          "A dynamic social networking app, created to enable sharing of personalized content.",
           techStack: "Express.js, MongoDB, Node.js, React.js",
           link: "",
           open: ""
         },
         "Equinox": {
           desc:
-          "A discord bot made during the COVID-19 pandemic using Python. Serves as a moderation bot, with the intention to help keep servers secure from bots/raiders hosted on a Heroku Server",
+          "A discord bot featuring moderation and unique image manipulation in Python.",
           techStack: "Python, SQLite, SQL, Pillow, Discord.py",
           link: "",
           open: ""
