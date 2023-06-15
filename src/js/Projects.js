@@ -30,7 +30,7 @@ function Projects() {
         "Verve": {
           desc:
           "A dynamic social networking app, created to enable sharing of personalized content.",
-          techStack: "Express.js, MongoDB, Node.js, React.js",
+          techStack: "Docker, PostgreSQL, SpringBoot, Angular.js",
           link: "",
           open: ""
         },
