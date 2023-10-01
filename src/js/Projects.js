@@ -22,23 +22,23 @@ function Projects() {
         },
         "Takumi A.I.": {
           desc:
-          "A 2D runner game made in PyGame, featuring a NEAT algorithm to run multiple generations of AI stimulations.",
+          "An endless runner simulation in PyGame, using a NEAT algorithm for evolving AI generations",
           techStack: "Python, PyGame",
           link: "https://github.com/wxlkda/TakumiAI",
           open: ""
         },
         "Verve": {
           desc:
-          "A dynamic social networking app, created to enable sharing of personalized content.",
-          techStack: "Docker, PostgreSQL, SpringBoot, Angular.js",
-          link: "",
+          "A full-stack social media app, created to enable sharing of personalized content.",
+          techStack: "PostgreSQL, SpringBoot, Angular.js",
+          link: "https://github.com/wxlkda/verve",
           open: ""
         },
-        "Equinox": {
+        "ASLingual": {
           desc:
-          "A discord bot featuring moderation and unique image manipulation in Python.",
-          techStack: "Python, SQLite, SQL, Pillow, Discord.py",
-          link: "",
+          "An advanced deep learning tool transcribe ASL signs through nuanced spatial recognition.",
+          techStack: "Python, TensorFlow, Keras, WASM",
+          link: "https://github.com/wxlkda/aslingual",
           open: ""
         }
       };

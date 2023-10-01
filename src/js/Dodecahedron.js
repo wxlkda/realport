@@ -1,6 +1,5 @@
 import React, { useRef, useState, useCallback } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text } from '@react-three/drei';
 import useCanvasWheel from '../hooks/useCanvasWheel'; // Import the custom hook
 
 const Dodecahedron = () => {
