@@ -44,7 +44,7 @@ function Projects() {
         "JobBase": {
           desc:
           "A job-tracking application designed to help me keep track of my co-op applications",
-          techStack: "PostgreSQL, Express.js, React.js, Node.js",
+          techStack: "PostgreSQL, Express, React, Node",
           link: "https://github.com/wxlkda/jobbase"
         }
       };
