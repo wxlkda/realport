@@ -22,7 +22,7 @@ function Projects() {
         },
         "Takumi A.I.": {
           desc:
-          "An endless runner simulation in PyGame, using a NEAT algorithm for evolving AI generations",
+          "An endless runner game in PyGame, using a NEAT algorithm for evolving AI generations",
           techStack: "Python, PyGame",
           link: "https://github.com/wxlkda/TakumiAI",
           open: ""
@@ -36,7 +36,7 @@ function Projects() {
         },
         "ASLingual": {
           desc:
-          "An advanced deep learning tool transcribe ASL signs through nuanced spatial recognition.",
+          "An advanced deep learning tool transcribe ASL signs through spatial recognition.",
           techStack: "Python, TensorFlow, Keras, WASM",
           link: "https://github.com/wxlkda/aslingual",
           open: ""
