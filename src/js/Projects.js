@@ -18,7 +18,7 @@ function Projects() {
           "A website used to visualize numerous algorithms on arrays, graphs, and binary trees.",
           techStack: "HTML / CSS, Javascript",
           link: "https://github.com/wxlkda/datavis",
-          open: "https://data.alwalidkhan.com/"
+          open: ""
         },
         "Takumi A.I.": {
           desc:
@@ -40,6 +40,12 @@ function Projects() {
           techStack: "Python, TensorFlow, Keras, WASM",
           link: "https://github.com/wxlkda/aslingual",
           open: ""
+        },
+        "JobBase": {
+          desc:
+          "A job-tracking application designed to help me keep track of my co-op applications",
+          techStack: "PostgreSQL, Express.js, React.js, Node.js",
+          link: "https://github.com/wxlkda/jobbase"
         }
       };
     return (
