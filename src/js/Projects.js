@@ -46,6 +46,12 @@ function Projects() {
           "A job-tracking application designed to help me keep track of my co-op applications",
           techStack: "PostgreSQL, Express, React, Node",
           link: "https://github.com/wxlkda/jobbase"
+        },
+        "Neural Network Visualizer": {
+          desc:
+          "WPF tool for real-time neural network design, visualization & deep learning concepts.",
+          techStack: "C#, WPF, AWS EC2",
+          link: "https://github.com/wxlkda/neural-network"
         }
       };
     return (
