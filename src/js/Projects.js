@@ -13,47 +13,43 @@ function Projects() {
   
     const projectsRef = useNav("projects");
     const projectsList = {
-        "Data Visualizer": {
-          desc:
-          "A website used to visualize numerous algorithms on arrays, graphs, and binary trees.",
-          techStack: "HTML / CSS, Javascript",
-          link: "https://github.com/wxlkda/datavis",
+      "Neural Network Visualizer": {
+          desc: "WPF tool for real-time neural network design, visualization & deep learning concepts.",
+          techStack: "C#, WPF, AWS EC2",
+          link: "https://github.com/wxlkda/neural-network",
           open: ""
-        },
-        "Takumi A.I.": {
-          desc:
-          "An endless runner game in PyGame, using a NEAT algorithm for evolving AI generations",
-          techStack: "Python, PyGame",
-          link: "https://github.com/wxlkda/TakumiAI",
+      },
+      "JobBase": {
+          desc: "A job-tracking application designed to help me keep track of my co-op applications",
+          techStack: "PostgreSQL, Express, React, Node",
+          link: "https://github.com/wxlkda/jobbase",
           open: ""
-        },
-        "Verve": {
-          desc:
-          "A full-stack social media app, created to enable sharing of personalized content.",
+      },
+      "Verve": {
+          desc: "A full-stack social media app, created to enable sharing of personalized content.",
           techStack: "PostgreSQL, SpringBoot, Angular.js",
           link: "https://github.com/wxlkda/verve",
           open: ""
-        },
-        "ASLingual": {
-          desc:
-          "An advanced deep learning tool transcribe ASL signs through spatial recognition.",
+      },
+      "Data Visualizer": {
+          desc: "A website used to visualize numerous algorithms on arrays, graphs, and binary trees.",
+          techStack: "HTML / CSS, Javascript",
+          link: "https://github.com/wxlkda/datavis",
+          open: ""
+      },
+      "Takumi A.I.": {
+          desc: "An endless runner game in PyGame, using a NEAT algorithm for evolving AI generations",
+          techStack: "Python, PyGame",
+          link: "https://github.com/wxlkda/TakumiAI",
+          open: ""
+      },
+      "ASLingual": {
+          desc: "An advanced deep learning tool transcribe ASL signs through spatial recognition.",
           techStack: "Python, TensorFlow, Keras, WASM",
           link: "https://github.com/wxlkda/aslingual",
           open: ""
-        },
-        "JobBase": {
-          desc:
-          "A job-tracking application designed to help me keep track of my co-op applications",
-          techStack: "PostgreSQL, Express, React, Node",
-          link: "https://github.com/wxlkda/jobbase"
-        },
-        "Neural Network Visualizer": {
-          desc:
-          "WPF tool for real-time neural network design, visualization & deep learning concepts.",
-          techStack: "C#, WPF, AWS EC2",
-          link: "https://github.com/wxlkda/neural-network"
-        }
-      };
+      }
+  };
     return (
       <div ref = {projectsRef} id="projects">
           <span className="projects-title">
